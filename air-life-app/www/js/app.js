@@ -99,6 +99,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/air-home-page',
         templateUrl: 'templates/air-home-page.html',
         controller: 'AirHomePagerCtrl'
+      })
+      .state('airClinicPage', {
+        url: '/air-clinic-page.js',
+        templateUrl: 'templates/air-clinic-page.html',
+        controller: 'AirClinicPageCtrl'
       });
 
     // if none of the above states are matched, use this as the fallback
