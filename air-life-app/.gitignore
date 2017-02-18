@@ -13,7 +13,6 @@ out
 *.iws
 jshint-output.html
 xcuserdata
-/www/lib
 
 node_modules/
 platforms/
