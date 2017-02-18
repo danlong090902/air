@@ -101,7 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'AirHomePagerCtrl'
       })
       .state('airClinicPage', {
-        url: '/air-clinic-page.js',
+        url: '/air-clinic-page',
         templateUrl: 'templates/air-clinic-page.html',
         controller: 'AirClinicPageCtrl'
       });
