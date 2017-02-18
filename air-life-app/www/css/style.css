@@ -3,7 +3,7 @@
 
 .app-air-clinic-page {
   background: #eee;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.5; }
   .app-air-clinic-page .departments {
     padding: 12px; }
@@ -15,14 +15,15 @@
     .app-air-clinic-page .list h2 {
       font-size: 16px; }
       .app-air-clinic-page .list h2 .tips {
-        color: #87cefa; }
+        color: #87cefa;
+        margin-left: 0; }
       .app-air-clinic-page .list h2 span {
         margin-left: 16px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: normal;
         color: #888; }
     .app-air-clinic-page .list p {
-      font-size: 12px;
+      font-size: 14px;
       color: #888; }
     .app-air-clinic-page .list .introduce {
       text-indent: 2em; }
