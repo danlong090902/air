@@ -66,6 +66,11 @@ angular.module('starter.controllers', []);
 /**
  * Created by xianmengadc on 17-2-17.
  */
+angular.module('starter.controllers')
+  .controller('AirHomePagerCtrl', ['$scope','$state',function ($scope,$state) {
+
+
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -73,7 +78,7 @@ angular.module('starter.controllers', []);
 angular.module('starter.controllers')
   .controller('AirLoginCtrl', ['$scope','$state',function ($scope,$state) {
     $scope.onClickLoginButton=function () {
-      $state.go('airResetPassword');
+      $state.go('airHomePage');
     };
     $scope.onClickResetPasswordButton=function () {
       $state.go('airResetPassword');
@@ -102,10 +107,9 @@ angular.module('starter.controllers')
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirResetPasswordCtrl', ['$scope','$ionicHistory',function ($scope,$ionicHistory) {
+  .controller('AirResetPasswordCtrl', ['$scope','$state',function ($scope,$state) {
     $scope.onClickCancelButton=function () {
-      $ionicHistory.goBack();
-      $ionicHistory.clearHistory();
+      $state.go('airLogin');
       console.log("取消")
     }
 

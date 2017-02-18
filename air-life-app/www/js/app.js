@@ -94,6 +94,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/air-register-user',
         templateUrl: 'templates/air-register-user.html',
         controller: 'AirRegisterUserCtrl'
+      })
+      .state('airHomePage', {
+        url: '/air-home-page',
+        templateUrl: 'templates/air-home-page.html',
+        controller: 'AirHomePagerCtrl'
       });
 
     // if none of the above states are matched, use this as the fallback
