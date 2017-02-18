@@ -1,2 +1,38 @@
 .app-air-login {
   background: blue; }
+
+.app-air-clinic-page {
+  background: #eee;
+  letter-spacing: 2px;
+  line-height: 1.5; }
+  .app-air-clinic-page .departments {
+    padding: 12px; }
+  .app-air-clinic-page .list {
+    margin-top: 10px; }
+    .app-air-clinic-page .list .bold {
+      font-weight: bolder;
+      margin-bottom: 15px; }
+    .app-air-clinic-page .list h2 {
+      font-size: 16px; }
+      .app-air-clinic-page .list h2 .tips {
+        color: #87cefa; }
+      .app-air-clinic-page .list h2 span {
+        margin-left: 16px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #888; }
+    .app-air-clinic-page .list p {
+      font-size: 12px;
+      color: #888; }
+    .app-air-clinic-page .list .introduce {
+      text-indent: 2em; }
+    .app-air-clinic-page .list .department-details {
+      position: relative; }
+      .app-air-clinic-page .list .department-details .i {
+        position: absolute;
+        top: calc(50% - 8px);
+        right: 22px;
+        color: #888;
+        font-size: 16px; }
+      .app-air-clinic-page .list .department-details p {
+        padding-right: 28px; }

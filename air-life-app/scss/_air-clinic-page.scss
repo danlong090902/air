@@ -1,0 +1,47 @@
+.app-air-clinic-page {
+  background: #eee;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  .departments {
+    padding: 12px;
+  }
+  .list {
+    margin-top: 10px;
+    .bold {
+      font-weight: bolder;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 16px;
+      .tips {
+        color: #87cefa;
+      }
+      span {
+        margin-left: 16px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #888;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: #888;
+    }
+    .introduce {
+      text-indent: 2em;
+    }
+    .department-details {
+      position: relative;
+      .i {
+        position: absolute;
+        top: calc(50% - 8px);
+        right: 22px;
+        color: #888;
+        font-size: 16px;
+      }
+       p {
+         padding-right: 28px;
+       }
+    }
+  }
+}
