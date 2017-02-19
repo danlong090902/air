@@ -37,3 +37,10 @@
         font-size: 16px; }
       .app-air-clinic-page .list .department-details p {
         padding-right: 28px; }
+
+.air-clinic-doctors {
+  letter-spacing: 0.5px; }
+  .air-clinic-doctors h2 {
+    font-weight: bolder; }
+  .air-clinic-doctors .padding {
+    padding: 5px 0; }
