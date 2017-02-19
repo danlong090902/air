@@ -20,8 +20,12 @@ angular.module('starter.controllers', []);
  */
 
 /**
- * Created by xianmengadc on 17-2-17.
+ * Created by salody on 17-2-18.
  */
+angular.module('starter.controllers')
+  .controller('AirClinicDoctorsCtrl', function ($scope) {
+
+  });
 
 /**
  * Created by xianmengadc on 17-2-17.

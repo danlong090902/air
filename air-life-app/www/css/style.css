@@ -3,7 +3,7 @@
 
 .app-air-clinic-page {
   background: #eee;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   line-height: 1.5; }
   .app-air-clinic-page .departments {
     padding: 12px; }
@@ -32,7 +32,7 @@
       .app-air-clinic-page .list .department-details .i {
         position: absolute;
         top: calc(50% - 8px);
-        right: 22px;
+        right: 18px;
         color: #888;
         font-size: 16px; }
       .app-air-clinic-page .list .department-details p {

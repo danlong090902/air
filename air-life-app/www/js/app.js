@@ -104,6 +104,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/air-clinic-page',
         templateUrl: 'templates/air-clinic-page.html',
         controller: 'AirClinicPageCtrl'
+      })
+      //门诊医生
+      .state('airClinicDoctors', {
+        url: '/airClinicDoctors/:clinicId',
+        templateUrl: 'templates/air-clinic-doctors.html',
+        controller: 'AirClinicDoctorsCtrl'
       });
 
     // if none of the above states are matched, use this as the fallback

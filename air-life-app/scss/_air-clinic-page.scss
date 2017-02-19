@@ -1,6 +1,6 @@
 .app-air-clinic-page {
   background: #eee;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   line-height: 1.5;
   .departments {
     padding: 12px;
@@ -36,13 +36,13 @@
       .i {
         position: absolute;
         top: calc(50% - 8px);
-        right: 22px;
+        right: 18px;
         color: #888;
         font-size: 16px;
       }
-       p {
-         padding-right: 28px;
-       }
+      p {
+        padding-right: 28px;
+      }
     }
   }
 }
