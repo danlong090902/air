@@ -44,3 +44,31 @@
     font-weight: bolder; }
   .air-clinic-doctors .padding {
     padding: 5px 0; }
+
+.air-clinic-doctor-details .slide-tab {
+  display: flex;
+  list-style: none;
+  padding: 15px 0;
+  border: 1px solid #ddd; }
+  .air-clinic-doctor-details .slide-tab li {
+    flex: 1;
+    text-align: center; }
+    .air-clinic-doctor-details .slide-tab li a {
+      display: block;
+      text-decoration: none;
+      color: #828282;
+      width: 100%;
+      padding: 14px 0; }
+      .air-clinic-doctor-details .slide-tab li a:hover {
+        cursor: pointer; }
+  .air-clinic-doctor-details .slide-tab .current {
+    position: relative; }
+    .air-clinic-doctor-details .slide-tab .current:after {
+      position: absolute;
+      left: 0;
+      bottom: -16px;
+      content: '';
+      width: 100%;
+      border-bottom: 2px solid #09a9ef; }
+    .air-clinic-doctor-details .slide-tab .current a {
+      color: #09a9ef; }

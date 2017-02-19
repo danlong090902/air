@@ -1,0 +1,37 @@
+.air-clinic-doctor-details {
+  .slide-tab {
+    display: flex;
+    list-style: none;
+    padding: 15px 0;
+    border: 1px solid #ddd;
+    li {
+      flex: 1;
+      text-align: center;
+      a {
+        display: block;
+        text-decoration: none;
+        color: #828282;
+        width: 100%;
+        padding: 14px 0;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .current {
+      position: relative;
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: -16px;
+        content: '';
+        width: 100%;
+        border-bottom: 2px solid #09a9ef;
+
+      }
+      a {
+        color: #09a9ef
+      }
+    }
+  }
+}

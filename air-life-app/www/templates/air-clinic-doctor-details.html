@@ -1,0 +1,33 @@
+<ion-view view-title="医生详情" class="air-clinic-doctor-details">
+  <ion-content>
+    <ion-item class="item item-thumbnail-left item-text-wrap" href="#/air-clinic-Doctor/:doctorId">
+      <img ng-src="img/test.jpg" alt="">
+      <h2 style="font-weight: bolder">靳医生(工号005)</h2>
+      <p class="padding" style="padding-left: 0">爱尔诊所后宰门诊室</p>
+      <p>口腔科 医师</p>
+    </ion-item>
+    <div>
+      <ul class="slide-tab">
+        <li ng-class="slideIndex == 0 ? 'current':''">
+          <a ng-click="activeSlide(0)">预约</a>
+        </li>
+        <li ng-class="slideIndex == 1 ? 'current':''">
+          <a ng-click="activeSlide(1)">资料</a>
+        </li>
+      </ul>
+
+
+      <ion-slide-box on-slide-changed="slideChanged(index)"
+                     active-slide="slideIndex"
+                     show-pager="false"
+                     class="padding">
+        <ion-slide>
+          <div class="box blue"><h1>BLUE</h1></div>
+        </ion-slide>
+        <ion-slide>
+          <div class="box yellow"><h1 style="color: red">你发现了新大陆！</h1></div>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+  </ion-content>
+</ion-view>
