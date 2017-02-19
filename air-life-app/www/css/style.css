@@ -1,5 +1,8 @@
 .app-air-login {
-  background: blue; }
+  background: url("../img/air-life.png") no-repeat 100%;
+  background-position: center 0; }
+  .app-air-login .phone {
+    margin-top: 100px; }
 
 .app-air-clinic-page {
   background: #eee;
