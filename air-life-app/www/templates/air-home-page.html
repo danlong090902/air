@@ -1,6 +1,69 @@
-
 <ion-view class="app-air-home-page" view-title="爱尔生活">
   <ion-content>
-    hello
+    <img src="../img/home-page.jpg" alt="">
+    <div class="home-page">
+      <div class="row">
+        <div class="col col-50">
+          <ion-list can-swipe="listCanSwipe model-row">
+            <ion-item class="item-thumbnail-right">
+              <img ng-src="../img/0.png">
+              <h2>复诊</h2>
+              <p>及时复诊预约</p>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div class="col col-50">
+          <ion-list can-swipe="listCanSwipe">
+            <ion-item class="item-thumbnail-right">
+              <img ng-src="../img/2.png">
+              <h2>爱尔诊所</h2>
+              <p>名医坐诊</p>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-50">
+          <ion-list can-swipe="listCanSwipe model-row">
+            <ion-item class="item-thumbnail-right">
+              <img ng-src="../img/3.png">
+              <h2>名医联盟</h2>
+              <p>线上咨询</p>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div class="col col-50">
+          <ion-list can-swipe="listCanSwipe">
+            <ion-item class="item-thumbnail-right">
+              <img ng-src="../img/5.png">
+              <h2>商户联盟</h2>
+              <p>信赖商户</p>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+      <div class="doctor-recommend">
+      </div>
+        <ion-item class="doctors">
+          <span>名医联盟推荐医生</span>
+        </ion-item>
+      <!--添加item-text-wrap 可以使item类的内容换行-->
+
+      <!--医生详情开始-->
+      <!--医生一详情-->
+      <ion-item class="doctor-details item-text-wrap item-thumbnail-left" href="#">
+        <img src="../img/home-page.jpg" alt="">
+        <h2>邱洪涛<small>产科 医师</small></h2>
+        <p>从事妇产科临床与教学25年，擅长处理产程中出现的各种异常情况及疑难问题，娴熟产前、臀助产，内选转术等助产技术。</p>
+      </ion-item>
+      <!--医生一详情-->
+      <ion-item class="doctor-details item-text-wrap item-thumbnail-left" href="#">
+        <img src="../img/home-page.jpg" alt="">
+        <h2>邱洪涛<small>产科 医师</small></h2>
+        <p>从事妇产科临床与教学25年，擅长处理产程中出现的各种异常情况及疑难问题，娴熟产前、臀助产，内选转术等助产技术。</p>
+      </ion-item>
+      <!--医生详情结束-->
+
+    </div>
   </ion-content>
 </ion-view>

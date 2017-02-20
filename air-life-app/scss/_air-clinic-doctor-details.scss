@@ -1,8 +1,82 @@
 .air-clinic-doctor-details {
+  .date-choice {
+    margin-top: 14px;
+    background: #fff;
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      margin: 0;
+      padding: 10px;
+    }
+    .date-row {
+      &:last-child {
+        border-bottom: solid 1px #ddd;
+      }
+      display: flex;
+      .date-col {
+        flex: 1;
+        text-align: center;
+        padding: 10px 0;
+        border: 1px solid #ddd;
+        border-bottom-style: none;
+        border-right-style: none;
+        &.active {
+          background: #5cbaf0;
+          color: #fff;
+        }
+      }
+      .date-col1 {
+        flex-basis: 37px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        border: 1px solid #ddd;
+        border-bottom-style: none;
+        border-right-style: none;
+      }
+    }
+
+  }
+  .time-choice {
+    margin-top: 10px;
+    background: #fff;
+    color: #5cbaf0;
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      margin: 0;
+      padding: 10px;
+    }
+    .time-row {
+      display: flex;
+      &:last-child {
+        border-bottom: solid 1px #ddd;
+      }
+    }
+    .time-col {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      border: 1px solid #ddd;
+      border-bottom-style: none;
+      border-right-style: none;
+      &.disable {
+        background: #ddd;
+        color: red;
+      }
+    }
+  }
+  .address {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background: #fff;
+  }
   .slide-tab {
+    background: #fff;
     display: flex;
+    box-sizing: border-box;
+    height: 45px;
     list-style: none;
-    padding: 15px 0;
     border: 1px solid #ddd;
     li {
       flex: 1;
@@ -12,7 +86,7 @@
         text-decoration: none;
         color: #828282;
         width: 100%;
-        padding: 14px 0;
+        line-height: 45px;
         &:hover {
           cursor: pointer;
         }
@@ -23,7 +97,7 @@
       &:after {
         position: absolute;
         left: 0;
-        bottom: -16px;
+        bottom: -1px;
         content: '';
         width: 100%;
         border-bottom: 2px solid #09a9ef;
@@ -32,6 +106,53 @@
       a {
         color: #09a9ef
       }
+    }
+  }
+  .bar-footer {
+    .left {
+      position: absolute;
+      width: 284px;
+      .introduce {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        padding-left: 10px;
+        h2 {
+          font-size: 16px;
+          margin: 0;
+          font-weight: bolder;
+        }
+      }
+      .price {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 84px;
+        .old {
+          font-size: 14px;
+          text-decoration: line-through;
+          margin-left: 10px;
+        }
+        .new {
+          font-size: 16px;
+          color: red;
+        }
+      }
+    }
+    .right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 44px;
+      padding: 0 18px;
+      background: #387ef5;
+      line-height: 44px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      border: 1px solid #0c60ee;
+      border-radius: 2px;
     }
   }
 }
