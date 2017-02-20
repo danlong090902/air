@@ -48,10 +48,72 @@
   .air-clinic-doctors .padding {
     padding: 5px 0; }
 
+.air-clinic-doctor-details .date-choice {
+  margin-top: 14px;
+  background: #fff; }
+  .air-clinic-doctor-details .date-choice h2 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px; }
+  .air-clinic-doctor-details .date-choice .date-row {
+    display: flex; }
+    .air-clinic-doctor-details .date-choice .date-row:last-child {
+      border-bottom: solid 1px #ddd; }
+    .air-clinic-doctor-details .date-choice .date-row .date-col {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      border: 1px solid #ddd;
+      border-bottom-style: none;
+      border-right-style: none; }
+      .air-clinic-doctor-details .date-choice .date-row .date-col.active {
+        background: #5cbaf0;
+        color: #fff; }
+    .air-clinic-doctor-details .date-choice .date-row .date-col1 {
+      flex-basis: 37px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      border: 1px solid #ddd;
+      border-bottom-style: none;
+      border-right-style: none; }
+
+.air-clinic-doctor-details .time-choice {
+  margin-top: 10px;
+  background: #fff;
+  color: #5cbaf0; }
+  .air-clinic-doctor-details .time-choice h2 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px; }
+  .air-clinic-doctor-details .time-choice .time-row {
+    display: flex; }
+    .air-clinic-doctor-details .time-choice .time-row:last-child {
+      border-bottom: solid 1px #ddd; }
+  .air-clinic-doctor-details .time-choice .time-col {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-bottom-style: none;
+    border-right-style: none; }
+    .air-clinic-doctor-details .time-choice .time-col.disable {
+      background: #ddd;
+      color: red; }
+
+.air-clinic-doctor-details .address {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background: #fff; }
+
 .air-clinic-doctor-details .slide-tab {
+  background: #fff;
   display: flex;
+  box-sizing: border-box;
+  height: 45px;
   list-style: none;
-  padding: 15px 0;
   border: 1px solid #ddd; }
   .air-clinic-doctor-details .slide-tab li {
     flex: 1;
@@ -61,7 +123,7 @@
       text-decoration: none;
       color: #828282;
       width: 100%;
-      padding: 14px 0; }
+      line-height: 45px; }
       .air-clinic-doctor-details .slide-tab li a:hover {
         cursor: pointer; }
   .air-clinic-doctor-details .slide-tab .current {
@@ -69,9 +131,49 @@
     .air-clinic-doctor-details .slide-tab .current:after {
       position: absolute;
       left: 0;
-      bottom: -16px;
+      bottom: -1px;
       content: '';
       width: 100%;
       border-bottom: 2px solid #09a9ef; }
     .air-clinic-doctor-details .slide-tab .current a {
       color: #09a9ef; }
+
+.air-clinic-doctor-details .bar-footer .left {
+  position: absolute;
+  width: 284px; }
+  .air-clinic-doctor-details .bar-footer .left .introduce {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    padding-left: 10px; }
+    .air-clinic-doctor-details .bar-footer .left .introduce h2 {
+      font-size: 16px;
+      margin: 0;
+      font-weight: bolder; }
+  .air-clinic-doctor-details .bar-footer .left .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 84px; }
+    .air-clinic-doctor-details .bar-footer .left .price .old {
+      font-size: 14px;
+      text-decoration: line-through;
+      margin-left: 10px; }
+    .air-clinic-doctor-details .bar-footer .left .price .new {
+      font-size: 16px;
+      color: red; }
+
+.air-clinic-doctor-details .bar-footer .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 44px;
+  padding: 0 18px;
+  background: #387ef5;
+  line-height: 44px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #0c60ee;
+  border-radius: 2px; }

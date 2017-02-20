@@ -20,14 +20,76 @@
       <ion-slide-box on-slide-changed="slideChanged(index)"
                      active-slide="slideIndex"
                      show-pager="false"
-                     class="padding">
+                     style="background: #ddd">
         <ion-slide>
-          <div class="box blue"><h1>BLUE</h1></div>
+          <p class="address">爱尔诊所后宰门诊室 后宰门130号创之星大厦一单元122（中户）</p>
+          <div class="date-choice">
+            <h2>日期选择</h2>
+            <div class="date-row row1">
+              <div class="date-col date-col1">日<br>期</div>
+              <div class="date-col">12.2<br>周 一</div>
+              <div class="date-col">12.2<br>周 一</div>
+              <div class="date-col active">12.2<br>周 一</div>
+              <div class="date-col">12.2<br>周 一</div>
+              <div class="date-col">12.2<br>周 一</div>
+              <div class="date-col">12.2<br>周 一</div>
+              <div class="date-col">12.2<br>周 一</div>
+            </div>
+            <div class="date-row">
+              <div class="date-col date-col1">上午</div>
+              <div class="date-col"></div>
+              <div class="date-col"></div>
+              <div class="date-col active">坐诊</div>
+              <div class="date-col"></div>
+              <div class="date-col"></div>
+              <div class="date-col"></div>
+              <div class="date-col"></div>
+            </div>
+            <div class="date-row">
+              <div class="date-col date-col1">下午</div>
+              <div class="date-col"></div>
+              <div class="date-col"></div>
+              <div class="date-col active">坐诊</div>
+              <div class="date-col"></div>
+              <div class="date-col"></div>
+              <div class="date-col"></div>
+              <div class="date-col" style="color: #5cbaf0;">坐诊</div>
+            </div>
+          </div>
+          <div class="time-choice">
+            <h2>选择上午时间</h2>
+            <div class="time-row">
+              <div class="time-col disable">08:00<br>不可预约</div>
+              <div class="time-col">08:30<br>余号4个</div>
+              <div class="time-col">08:30<br>余号4个</div>
+              <div class="time-col">08:30<br>余号4个</div>
+            </div>
+            <div class="time-row">
+              <div class="time-col">08:30<br>余号4个</div>
+              <div class="time-col">08:30<br>余号4个</div>
+              <div class="time-col">08:30<br>余号4个</div>
+              <div class="time-col">08:30<br>余号4个</div>
+            </div>
+          </div>
         </ion-slide>
         <ion-slide>
-          <div class="box yellow"><h1 style="color: red">你发现了新大陆！</h1></div>
+          <div style="height: 200px"><h1 style="color: red">你发现了新大陆！</h1></div>
         </ion-slide>
       </ion-slide-box>
     </div>
   </ion-content>
+  <div class="bar bar-footer">
+    <div class="left">
+      <div class="introduce">
+        <h2>加急预约</h2>
+        <p>提前预约享受更多优惠</p>
+      </div>
+      <div class="price">
+        <span class="old">200元</span>
+        <br>
+        <span class="new">2.01元</span>
+      </div>
+    </div>
+    <button class="right">提交预约</button>
+  </div>
 </ion-view>
