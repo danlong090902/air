@@ -56,6 +56,22 @@
   .app-air-register-user i {
     color: #0ba9f0; }
 
+.app-air-home-page {
+  background-color: #f0f0f0; }
+  .app-air-home-page img {
+    width: 100%; }
+  .app-air-home-page .home-page .row {
+    padding: 0 !important; }
+  .app-air-home-page .home-page .col-50 {
+    padding: 0 !important; }
+  .app-air-home-page .home-page .item-thumbnail-right {
+    min-height: 20px  !important; }
+  .app-air-home-page .home-page .row img {
+    width: 38px;
+    height: 38px; }
+  .app-air-home-page .home-page .row .model-row h2, .app-air-home-page .home-page .row .model-row p {
+    width: 100%  !important; }
+
 .app-air-clinic-page {
   background: #eee;
   letter-spacing: .5px;
