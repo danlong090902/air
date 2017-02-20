@@ -144,6 +144,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         templateUrl: 'templates/air-register-user.html',
         controller: 'AirRegisterUserCtrl'
       })
+      //爱尔诊所
+        .state('airClinicHome', {
+            url: '/air-clinic-home',
+            templateUrl: 'templates/air-clinic-home.html',
+            controller: 'airClinicHomeCtrl'
+        })
       //诊所主页
       .state('airClinicPage', {
         url: '/air-clinic-page',
