@@ -33,6 +33,20 @@
   .app-air-reset-password i {
     color: #0ba9f0; }
 
+.app-air-register-user {
+  background: url("../img/air-life.png") no-repeat center 50px; }
+  .app-air-register-user .home-page {
+    padding-top: 140px;
+    width: 85%;
+    margin: auto; }
+  .app-air-register-user .button {
+    color: #000;
+    border-color: #dddddd;
+    width: 94%;
+    margin-left: 3%; }
+  .app-air-register-user i {
+    color: #0ba9f0; }
+
 .app-air-clinic-page {
   background: #eee;
   letter-spacing: .5px;
