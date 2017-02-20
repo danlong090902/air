@@ -184,7 +184,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       .state('airClinicPersonalCenter', {
         url: '/air-clinic-personal-center',
         templateUrl: 'templates/air-clinic-personal-center.html',
-        // controller: 'AirClinicPersonalCenterCtrl'
+        controller: 'AirClinicPersonalCenterCtrl'
+      })
+      //个人信息
+      .state('airClinicPersonalMseeage', {
+        url: '/air-clinic-personal-message',
+        templateUrl: 'templates/air-clinic-personal-message.html',
+        // controller: 'AirClinicPersonalMseeageCtrl'
       })
       // 病情描述
       .state('airClinicIllnessDescription', {
