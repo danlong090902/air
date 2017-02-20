@@ -19,6 +19,20 @@
     .app-air-login .page-home .button-right {
       margin-left: 55%; }
 
+.app-air-reset-password {
+  background: url("../img/air-life.png") no-repeat center 50px; }
+  .app-air-reset-password .home-page {
+    padding-top: 140px;
+    width: 85%;
+    margin: auto; }
+  .app-air-reset-password .button {
+    color: #000;
+    border-color: #dddddd;
+    width: 94%;
+    margin-left: 3%; }
+  .app-air-reset-password i {
+    color: #0ba9f0; }
+
 .app-air-clinic-page {
   background: #eee;
   letter-spacing: .5px;
