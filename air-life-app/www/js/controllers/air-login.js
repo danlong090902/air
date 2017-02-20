@@ -13,7 +13,7 @@ angular.module('starter.controllers')
       $state.go('airRegisterUser');
     };
     $scope.onClickClinicButton=function () {
-      $state.go('airClinicPage');
+      $state.go('airClinicMyService');
     }
 
   }]);

@@ -73,6 +73,11 @@ angular.module('starter.controllers')
 /**
  * Created by xianmengadc on 17-2-17.
  */
+angular.module('starter.controllers')
+  .controller('AirClinicMyServiceCtrl', ['$scope','$state',function ($scope,$state) {
+
+
+  }]);
 
 /**
  * Created by salody on 17-2-17.
@@ -118,7 +123,7 @@ angular.module('starter.controllers')
       $state.go('airRegisterUser');
     };
     $scope.onClickClinicButton=function () {
-      $state.go('airClinicPage');
+      $state.go('airClinicMyService');
     }
 
   }]);
