@@ -351,6 +351,14 @@
       height: 16px;
       border: 2px solid #09a9ef;
       border-radius: 50%; }
+      .air-clinic-illness-description .flow .flowItem .fIcon.active {
+        background: #09a9ef;
+        text-align: center; }
+        .air-clinic-illness-description .flow .flowItem .fIcon.active i:before {
+          color: white;
+          height: 100%;
+          line-height: 16px;
+          font-size: 16px; }
     .air-clinic-illness-description .flow .flowItem .des {
       position: absolute;
       bottom: 2px;
