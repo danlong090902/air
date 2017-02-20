@@ -55,6 +55,24 @@
   .app-air-register-user i {
     color: #0ba9f0; }
 
+.app-air-clinic-home h2 {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold; }
+
+.app-air-clinic-home small {
+  font-size: 8px;
+  color: #888888; }
+
+.app-air-clinic-home .department {
+  display: inline-block;
+  margin: 8px 0;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #60bdf8; }
+
 .app-air-clinic-page {
   background: #eee;
   letter-spacing: .5px;
@@ -239,8 +257,12 @@
       width: 100px; }
   .app-air-home-page .home-page .col-50 {
     padding: 0 !important; }
-  .app-air-home-page .home-page .item-thumbnail-right {
-    min-height: 20px  !important; }
+  .app-air-home-page .home-page .list {
+    height: 70px; }
+  .app-air-home-page .home-page .item-thumbnail-right, .app-air-home-page .home-page .item-thumbnail-right .item-content {
+    min-height: 0; }
+  .app-air-home-page .home-page .doctors {
+    margin-top: 4px; }
   .app-air-home-page .home-page .row img {
     width: 38px;
     height: 38px; }

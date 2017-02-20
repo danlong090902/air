@@ -13,8 +13,14 @@
     .col-50{
       padding: 0 !important;
     }
-    .item-thumbnail-right{
-      min-height: 20px  !important;
+    .list{
+      height: 70px;
+    }
+    .item-thumbnail-right, .item-thumbnail-right .item-content{
+      min-height: 0;
+    }
+    .doctors{
+      margin-top: 4px;
     }
     .row{
       img{
