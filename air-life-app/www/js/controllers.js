@@ -191,9 +191,6 @@ angular.module('starter.controllers')
     $scope.onClickRegisterUserButton=function () {
       $state.go('airRegisterUser');
     };
-    $scope.onClickClinicButton=function () {
-      $state.go('airClinicPersonalCenter');
-    }
 
   }]);
 
