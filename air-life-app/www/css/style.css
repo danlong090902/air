@@ -7,6 +7,8 @@
     .app-air-login .page-home input, .app-air-login .page-home .button {
       color: #000;
       border-color: #dddddd; }
+    .app-air-login .page-home .list {
+      margin: 10px; }
     .app-air-login .page-home .button {
       width: 94%;
       margin-left: 3%; }
@@ -25,6 +27,8 @@
     padding-top: 140px;
     width: 85%;
     margin: auto; }
+  .app-air-reset-password .list {
+    margin: 10px; }
   .app-air-reset-password .button {
     color: #000;
     border-color: #dddddd;
@@ -39,11 +43,16 @@
     padding-top: 140px;
     width: 85%;
     margin: auto; }
+  .app-air-register-user .list {
+    margin: 10px; }
   .app-air-register-user .button {
     color: #000;
     border-color: #dddddd;
     width: 94%;
     margin-left: 3%; }
+  .app-air-register-user .button-small {
+    border: none;
+    color: #bbbbbb; }
   .app-air-register-user i {
     color: #0ba9f0; }
 
