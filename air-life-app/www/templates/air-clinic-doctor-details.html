@@ -60,7 +60,7 @@
             <h2>选择上午时间</h2>
             <div class="time-row">
               <div class="time-col disable">08:00<br>不可预约</div>
-              <div class="time-col" ng-click="appointment()">08:30<br>余号4个</div>
+              <div class="time-col">08:30<br>余号4个</div>
               <div class="time-col">08:30<br>余号4个</div>
               <div class="time-col">08:30<br>余号4个</div>
             </div>
@@ -90,6 +90,6 @@
         <span class="new">2.01元</span>
       </div>
     </div>
-    <button class="right">提交预约</button>
+    <button class="right" ng-click="appointment()">提交预约</button>
   </div>
 </ion-view>
