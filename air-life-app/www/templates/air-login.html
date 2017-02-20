@@ -1,19 +1,22 @@
 <ion-view hide-nav-bar="true" class="app-air-login">
   <ion-content>
-    <div class="list list-inset">
-      <label class="item item-input">
-        <i class="icon ion-search placeholder-icon"></i>
-        <input type="text" placeholder="请输入手机号">
-      </label>
+    <div class="page-home">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-android-person placeholder-icon"></i>
+          <input type="text" placeholder="请输入手机号">
+        </label>
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-locked placeholder-icon"></i>
+          <input type="password" placeholder="请输入密码">
+        </label>
+      </div>
+      <button class="button button-block  button-light" ng-click="onClickLoginButton()">登陆</button>
+      <button class="button button-light button-small" ng-click="onClickResetPasswordButton()">忘记密码</button>
+      <button class="button button-light button-small button-right" ng-click="onClickRegisterUserButton()">注册</button>
     </div>
-    <div class="list list-inset">
-      <label class="item item-input">
-        <input type="password" placeholder="请输入密码">
-      </label>
-    </div>
-      <button class="button button-block button-light" ng-click="onClickLoginButton()">登陆</button>
-      <button class="button button-block button-light" ng-click="onClickResetPasswordButton()">忘记密码</button>
-      <button class="button button-block button-light" ng-click="onClickRegisterUserButton()">注册</button>
-      <button class="button button-block button-light" ng-click="onClickClinicButton()">跳到诊室详情</button>
+    <button class="button  button-light" ng-click="onClickClinicButton()">跳到诊室详情</button>
   </ion-content>
 </ion-view>

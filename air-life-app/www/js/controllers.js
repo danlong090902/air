@@ -155,7 +155,7 @@ angular.module('starter.controllers')
 angular.module('starter.controllers')
   .controller('AirLoginCtrl', ['$scope','$state',function ($scope,$state) {
     $scope.onClickLoginButton=function () {
-      $state.go('airHomePage');
+      $state.go('airTabs.airHomePage');
     };
     $scope.onClickResetPasswordButton=function () {
       $state.go('airResetPassword');
