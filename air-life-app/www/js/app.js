@@ -105,17 +105,23 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         templateUrl: 'templates/air-clinic-page.html',
         controller: 'AirClinicPageCtrl'
       })
-      //门诊医生
+      // 门诊医生
       .state('airClinicDoctors', {
         url: '/airClinicPage/:clinicId',
         templateUrl: 'templates/air-clinic-doctors.html',
         controller: 'AirClinicDoctorsCtrl'
       })
-      //医生详情
+      // 医生详情
       .state('airClinicDoctorDetails', {
         url: '/air-clinic-Doctor/:doctorId',
         templateUrl: 'templates/air-clinic-doctor-details.html',
         controller: 'AirClinicDoctorDetailsCtrl'
+      })
+      // 病情描述
+      .state('airClinicIllnessDescription', {
+        url: '/air-clinic-illness-description',
+        templateUrl: 'templates/air-clinic-illness-description.html',
+        controller: 'AirClinicIllnessDescriptionCtrl'
       });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/air-login');

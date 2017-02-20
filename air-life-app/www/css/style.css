@@ -177,3 +177,22 @@
   color: #fff;
   border: 1px solid #0c60ee;
   border-radius: 2px; }
+
+.air-clinic-illness-description .item {
+  padding: 10px; }
+  .air-clinic-illness-description .item h2 {
+    margin: 0; }
+  .air-clinic-illness-description .item textarea {
+    resize: none;
+    width: 100%;
+    height: 80px; }
+  .air-clinic-illness-description .item .title {
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 5px; }
+  .air-clinic-illness-description .item i {
+    font-size: 14px; }
+  .air-clinic-illness-description .item button {
+    width: 100%;
+    background: #09a9ef;
+    color: #fff; }
