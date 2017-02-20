@@ -106,15 +106,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       })
       //  tabs我的服务
-      // .state('airTabs.airHomePage', {
-      //   url: '/air-home-page',
-      //   views: {
-      //     'air-home-page': {
-      //       templateUrl: 'templates/air-home-page.html',
-      //       // controller: 'AirTabsHomePageCtrl'
-      //     }
-      //   }
-      // })
+      .state('airTabs.airClinicMyService', {
+        url: '/air-clinic-my-service',
+        views: {
+          'air-clinic-my-service': {
+            templateUrl: 'templates/air-clinic-my-service.html',
+            controller: 'AirClinicMyService'
+          }
+        }
+      })
       // //  tabs个人中心
       // .state('airTabs.airHomePage', {
       //   url: '/air-home-page',
@@ -184,7 +184,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       .state('airClinicPersonalCenter', {
         url: '/air-clinic-personal-center',
         templateUrl: 'templates/air-clinic-personal-center.html',
-        // controller: 'AirClinicPersonalCenterCtrl'
+        controller: 'AirClinicPersonalCenterCtrl'
+      })
+      //个人信息
+      .state('airClinicPersonalMseeage', {
+        url: '/air-clinic-personal-message',
+        templateUrl: 'templates/air-clinic-personal-message.html',
+        // controller: 'AirClinicPersonalMseeageCtrl'
       })
       // 病情描述
       .state('airClinicIllnessDescription', {
