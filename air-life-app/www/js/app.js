@@ -185,7 +185,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/air-clinic-illness-description',
         templateUrl: 'templates/air-clinic-illness-description.html',
         controller: 'AirClinicIllnessDescriptionCtrl'
-      });
+      })
+      // 支付页面
+    .state('airClinicPay', {
+      url: '/air-clinic-pay',
+      templateUrl: 'templates/air-clinic-pay.html',
+      controller: 'AirClinicPayCtrl'
+    });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/air-login');
 

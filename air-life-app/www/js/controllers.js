@@ -69,7 +69,7 @@ angular.module('starter.controllers')
  * Created by salody on 17-2-20.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicIllnessDescriptionCtrl', function ($scope, $ionicActionSheet) {
+  .controller('AirClinicIllnessDescriptionCtrl', function ($scope, $ionicActionSheet,$state) {
     $scope.showCamera = function () {
       var hideSheet = $ionicActionSheet.show({
         buttons: [
@@ -110,6 +110,9 @@ angular.module('starter.controllers')
         }
       });
     };
+    $scope.onSubmit = function () {
+      $state.go('airClinicPay');
+    }
   });
 
 /**
@@ -134,8 +137,13 @@ angular.module('starter.controllers')
   });
 
 /**
- * Created by xianmengadc on 17-2-17.
+ * Created by salody on 17-2-20.
  */
+angular.module('starter.controllers')
+  .controller('AirClinicPayCtrl', function () {
+
+  });
+
 
 /**
  * Created by xianmengadc on 17-2-17.
