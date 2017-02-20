@@ -1,0 +1,20 @@
+.app-air-clinic-home {
+  h2{
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  small {
+    font-size: 8px;
+    color: #888888;
+  }
+  .department{
+    display: inline-block;
+    margin: 8px 0;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #60bdf8;
+  }
+}

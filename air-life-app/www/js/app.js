@@ -156,6 +156,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         templateUrl: 'templates/air-clinic-page.html',
         controller: 'AirClinicPageCtrl'
       })
+      //诊所信息
+      .state('airClinicDepartment', {
+        url: '/air-clinic-department',
+        templateUrl: 'templates/air-clinic-department.html',
+        controller: 'AirClinicDepartmentCtrl'
+      })
       // 门诊医生
       .state('airClinicDoctors', {
         url: '/airClinicPage/:clinicId',
