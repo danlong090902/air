@@ -1,7 +1,13 @@
 .app-air-login{
-  background: url("../img/air-life.png") no-repeat 100%;
-  background-position: center 0;
-  .phone{
-    margin-top: 100px;
+  background: url("../img/air-life.png") no-repeat center 30px,
+              url("../img/login-bottom.png") no-repeat center bottom;
+  .phone-input{
+    margin-top: 185px;
   }
+  input{
+    margin-left:  10%;
+    margin-right:  10%;
+  }
+
+
 }
