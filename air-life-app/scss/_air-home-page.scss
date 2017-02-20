@@ -1,0 +1,26 @@
+.app-air-home-page{
+  background-color: #f0f0f0;
+  img{
+    width: 100%;
+  }
+  .home-page{
+    .row{
+      padding: 0 !important;
+      h2,p{
+        width: 100px;
+      }
+    }
+    .col-50{
+      padding: 0 !important;
+    }
+    .item-thumbnail-right{
+      min-height: 20px  !important;
+    }
+    .row{
+      img{
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
+}
