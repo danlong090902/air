@@ -178,6 +178,45 @@
   border: 1px solid #0c60ee;
   border-radius: 2px; }
 
+.air-clinic-illness-description .flow {
+  display: flex;
+  width: 100%;
+  height: 62px; }
+  .air-clinic-illness-description .flow .flowItem {
+    flex: 1;
+    position: relative; }
+    .air-clinic-illness-description .flow .flowItem:before {
+      position: absolute;
+      top: 26px;
+      left: 0;
+      content: '';
+      width: 18px;
+      border-top: 2px solid #09a9ef; }
+    .air-clinic-illness-description .flow .flowItem:after {
+      position: absolute;
+      top: 26px;
+      right: 0;
+      content: '';
+      width: 18px;
+      border-top: 2px solid #09a9ef; }
+    .air-clinic-illness-description .flow .flowItem:first-child:before {
+      width: 0; }
+    .air-clinic-illness-description .flow .flowItem:last-child:after {
+      width: 0; }
+    .air-clinic-illness-description .flow .flowItem .fIcon {
+      position: absolute;
+      top: 18px;
+      left: 40px;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #09a9ef;
+      border-radius: 50%; }
+    .air-clinic-illness-description .flow .flowItem .des {
+      position: absolute;
+      bottom: 2px;
+      left: 12px;
+      width: 100%; }
+
 .air-clinic-illness-description .item {
   padding: 10px; }
   .air-clinic-illness-description .item h2 {

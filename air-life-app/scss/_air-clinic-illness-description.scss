@@ -1,4 +1,54 @@
 .air-clinic-illness-description {
+  .flow {
+    display: flex;
+    width: 100%;
+    height: 62px;
+    .flowItem {
+      flex: 1;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 26px;
+        left: 0;
+        content: '';
+        width: 18px;
+        border-top: 2px solid #09a9ef;
+      }
+      &:after {
+        position: absolute;
+        top: 26px;
+        right: 0;
+        content: '';
+        width: 18px;
+        border-top: 2px solid #09a9ef;
+      }
+      &:first-child {
+        &:before {
+          width: 0;
+        }
+      }
+      &:last-child {
+        &:after {
+          width: 0;
+        }
+      }
+      .fIcon {
+        position: absolute;
+        top: 18px;
+        left: 40px;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #09a9ef;
+        border-radius: 50%;
+      }
+      .des {
+        position: absolute;
+        bottom: 2px;
+        left: 12px;
+        width: 100%;
+      }
+    }
+  }
   .item {
     padding: 10px;
     h2 {
