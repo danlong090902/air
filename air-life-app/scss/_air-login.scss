@@ -1,13 +1,31 @@
 .app-air-login{
-  background: url("../img/air-life.png") no-repeat center 30px,
+  background: url("../img/air-life.png") no-repeat center 20px,
               url("../img/login-bottom.png") no-repeat center bottom;
-  .phone-input{
-    margin-top: 185px;
+  .page-home{
+    padding-top: 185px;
+    width: 85%;
+    margin: auto;
+    input,.button{
+      color: #000;
+      border-color: #dddddd;
+    }
+    .button{
+      width: 94%;
+      margin-left: 3%;
+    }
+    i{
+      color: #0ba9f0;
+    }
+    .button-small{
+      width: 20%;
+      border: none;
+      color: #bbbbbb;
+    }
+    .button-right{
+      margin-left: 55%;
+    }
   }
-  input{
-    margin-left:  10%;
-    margin-right:  10%;
-  }
+
 
 
 }

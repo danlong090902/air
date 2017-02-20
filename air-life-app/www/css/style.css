@@ -1,11 +1,23 @@
 .app-air-login {
-  background: url("../img/air-life.png") no-repeat center 30px, url("../img/login-bottom.png") no-repeat center bottom; }
-  .app-air-login .phone-input {
-    margin-top: 185px; }
-  .app-air-login input {
-    margin-left: 10%;
-    margin-right: 10%; }
-
+  background: url("../img/air-life.png") no-repeat center 20px, url("../img/login-bottom.png") no-repeat center bottom; }
+  .app-air-login .page-home {
+    padding-top: 185px;
+    width: 85%;
+    margin: auto; }
+    .app-air-login .page-home input, .app-air-login .page-home .button {
+      color: #000;
+      border-color: #dddddd; }
+    .app-air-login .page-home .button {
+      width: 94%;
+      margin-left: 3%; }
+    .app-air-login .page-home i {
+      color: #0ba9f0; }
+    .app-air-login .page-home .button-small {
+      width: 20%;
+      border: none;
+      color: #bbbbbb; }
+    .app-air-login .page-home .button-right {
+      margin-left: 55%; }
 
 .app-air-clinic-page {
   background: #eee;
