@@ -318,6 +318,87 @@
     opacity: 0;
     transform: scale(2.5); } }
 
+.ion-clinic-pay .flow {
+  display: flex;
+  width: 100%;
+  height: 62px; }
+  .ion-clinic-pay .flow .flowItem {
+    flex: 1;
+    position: relative; }
+    .ion-clinic-pay .flow .flowItem:before {
+      position: absolute;
+      top: 26px;
+      left: 0;
+      content: '';
+      width: 18px;
+      border-top: 2px solid #09a9ef; }
+    .ion-clinic-pay .flow .flowItem:after {
+      position: absolute;
+      top: 26px;
+      right: 0;
+      content: '';
+      width: 18px;
+      border-top: 2px solid #09a9ef; }
+    .ion-clinic-pay .flow .flowItem:first-child:before {
+      width: 0; }
+    .ion-clinic-pay .flow .flowItem:last-child:after {
+      width: 0; }
+    .ion-clinic-pay .flow .flowItem .fIcon {
+      position: absolute;
+      top: 18px;
+      left: 40px;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #09a9ef;
+      border-radius: 50%; }
+      .ion-clinic-pay .flow .flowItem .fIcon.active {
+        background: #09a9ef;
+        text-align: center; }
+        .ion-clinic-pay .flow .flowItem .fIcon.active i:before {
+          color: white;
+          height: 100%;
+          line-height: 16px;
+          font-size: 16px; }
+    .ion-clinic-pay .flow .flowItem .des {
+      position: absolute;
+      bottom: 2px;
+      text-align: center;
+      width: 100%; }
+
+.ion-clinic-pay .item {
+  padding: 10px; }
+
+.ion-clinic-pay h2 {
+  font-weight: bolder; }
+
+.ion-clinic-pay .price {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: red; }
+
+.ion-clinic-pay .choice {
+  padding-left: 20px;
+  font-weight: bolder;
+  background: #ddd; }
+
+.ion-clinic-pay .list .thumbnail-left {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; }
+  .ion-clinic-pay .list .thumbnail-left img {
+    width: 40px;
+    height: 40px;
+    float: left; }
+  .ion-clinic-pay .list .thumbnail-left p {
+    padding-left: 60px;
+    margin: 0; }
+
+.ion-clinic-pay .submit {
+  padding: 0 10px; }
+  .ion-clinic-pay .submit button {
+    background: #09a9ef;
+    color: white; }
+
 .air-clinic-illness-description .flow {
   display: flex;
   width: 100%;
@@ -362,7 +443,7 @@
     .air-clinic-illness-description .flow .flowItem .des {
       position: absolute;
       bottom: 2px;
-      left: 12px;
+      text-align: center;
       width: 100%; }
 
 .air-clinic-illness-description .item {
