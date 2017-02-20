@@ -106,15 +106,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       })
       //  tabs我的服务
-      // .state('airTabs.airHomePage', {
-      //   url: '/air-home-page',
-      //   views: {
-      //     'air-home-page': {
-      //       templateUrl: 'templates/air-home-page.html',
-      //       // controller: 'AirTabsHomePageCtrl'
-      //     }
-      //   }
-      // })
+      .state('airTabs.airClinicMyService', {
+        url: '/air-clinic-my-service',
+        views: {
+          'air-clinic-my-service': {
+            templateUrl: 'templates/air-clinic-my-service.html',
+            controller: 'AirClinicMyService'
+          }
+        }
+      })
       // //  tabs个人中心
       // .state('airTabs.airHomePage', {
       //   url: '/air-home-page',
