@@ -163,6 +163,9 @@
   .air-clinic-doctors .padding {
     padding: 5px 0; }
 
+.air-clinic-doctor-details .tab {
+  background: #ddd; }
+
 .air-clinic-doctor-details .date-choice {
   margin-top: 14px;
   background: #fff; }

@@ -1,11 +1,11 @@
 /**
- * Created by xianmengadc on 17-2-17.
+ * Created by salody on 17-2-17.
  */
 angular.module('starter.controllers')
   .controller('AirClinicDoctorDetailsCtrl', function ($scope,$ionicSlideBoxDelegate,$state) {
-    $scope.slideIndex = 0;
+   /* $scope.slideIndex = 0;
 
-    /*debugger;*/
+    /!*debugger;*!/
     $scope.slideChanged = function(index) {
       $scope.slideIndex = index;
       console.log(index);
@@ -25,5 +25,14 @@ angular.module('starter.controllers')
     };
     $scope.appointment = function () {
       $state.go('airClinicIllnessDescription');
+    };*/
+    $scope.appointment = function () {
+      $state.go('airClinicIllnessDescription');
     };
+    $scope.tab = {
+     current: 0
+   };
+    $scope.activeTab = function (index) {
+      $scope.tab.current = index;
+    }
   });

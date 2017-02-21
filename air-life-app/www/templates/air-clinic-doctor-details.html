@@ -8,20 +8,17 @@
     </ion-item>
     <div>
       <ul class="slide-tab">
-        <li ng-class="slideIndex == 0 ? 'current':''">
-          <a ng-click="activeSlide(0)">预约</a>
+        <li ng-class="tab.current == 0 ? 'current':''">
+          <a ng-click="activeTab(0)">预约</a>
         </li>
-        <li ng-class="slideIndex == 1 ? 'current':''">
-          <a ng-click="activeSlide(1)">资料</a>
+        <li ng-class="tab.current == 1 ? 'current':''">
+          <a ng-click="activeTab(1)">资料</a>
         </li>
       </ul>
 
 
-      <ion-slide-box on-slide-changed="slideChanged(index)"
-                     active-slide="slideIndex"
-                     show-pager="false"
-                     style="background: #ddd">
-        <ion-slide>
+      <div class="tab">
+        <div ng-if="tab.current == 0">
           <p class="address">爱尔诊所后宰门诊室 后宰门130号创之星大厦一单元122（中户）</p>
           <div class="date-choice">
             <h2>日期选择</h2>
@@ -71,11 +68,26 @@
               <div class="time-col">08:30<br>余号4个</div>
             </div>
           </div>
-        </ion-slide>
-        <ion-slide>
+          <div class="time-choice">
+            <h2>选择下午时间</h2>
+            <div class="time-row">
+              <div class="time-col">13:00<br>不可预约</div>
+              <div class="time-col">13:30<br>余号4个</div>
+              <div class="time-col disable">13:30<br>不可预约</div>
+              <div class="time-col">13:30<br>余号4个</div>
+            </div>
+            <div class="time-row">
+              <div class="time-col disable">13:30<br>不可预约</div>
+              <div class="time-col">13:30<br>余号4个</div>
+              <div class="time-col">13:30<br>余号4个</div>
+              <div class="time-col">13:30<br>余号4个</div>
+            </div>
+          </div>
+        </div>
+        <div ng-if="tab.current == 1">
           <div style="height: 200px"><h1 style="color: red">你发现了新大陆！</h1></div>
-        </ion-slide>
-      </ion-slide-box>
+        </div>
+      </div>
     </div>
   </ion-content>
   <div class="bar bar-footer">
