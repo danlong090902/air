@@ -90,7 +90,16 @@ angular.module('starter.controllers')
           // add cancel code..
         },
         buttonClicked: function(index) {
-          return true;
+          switch (index) {
+            case 0:
+              openCamera();
+              break;
+            case 1:
+              openFilePicker();
+              break;
+            default:
+              return true;
+          }
         }
       });
     };
@@ -121,6 +130,53 @@ angular.module('starter.controllers')
     };
     $scope.onSubmit = function () {
       $state.go('airClinicPay');
+    };
+    function setOptions(srcType) {
+      return {
+        // Some common settings are 20, 50, and 100
+       /* quality: 50,*/
+        destinationType: Camera.DestinationType.FILE_URI,
+        // In this app, dynamically set the picture source, Camera or photo gallery
+        sourceType: srcType
+        /*encodingType: Camera.EncodingType.JPEG,
+        mediaType: Camera.MediaType.PICTURE,
+        allowEdit: true,
+        correctOrientation: true  //Corrects Android orientation quirks*/
+      };
+
+    }
+    function openCamera(selection) {
+
+      var srcType = Camera.PictureSourceType.CAMERA;
+      var options = setOptions(srcType);
+      /*var func = createNewFileEntry;*/
+
+      navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+
+        // You may choose to copy the picture, save it somewhere, or upload.
+
+
+      }, function cameraError(error) {
+        console.debug("Unable to obtain picture: " + error, "app");
+
+      }, options);
+    }
+    function openFilePicker(selection) {
+      var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
+      var options = setOptions(srcType);
+      /*var func = createNewFileEntry;*/
+
+      navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+
+        // You may choose to copy the picture, save it somewhere, or upload.
+
+
+      }, function cameraError(error) {
+        console.debug("Unable to obtain picture: " + error, "app");
+
+      }, options);
     }
   });
 
