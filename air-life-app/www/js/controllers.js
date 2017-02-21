@@ -20,13 +20,13 @@ angular.module('starter.controllers')
   });
 
 /**
- * Created by salody on 17-2-17.
+ * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
   .controller('AirClinicDoctorDetailsCtrl', function ($scope,$ionicSlideBoxDelegate,$state) {
-   /* $scope.slideIndex = 0;
+    $scope.slideIndex = 0;
 
-    /!*debugger;*!/
+    /*debugger;*/
     $scope.slideChanged = function(index) {
       $scope.slideIndex = index;
       console.log(index);
@@ -46,16 +46,7 @@ angular.module('starter.controllers')
     };
     $scope.appointment = function () {
       $state.go('airClinicIllnessDescription');
-    };*/
-    $scope.appointment = function () {
-      $state.go('airClinicIllnessDescription');
     };
-    $scope.tab = {
-     current: 0
-   };
-    $scope.activeTab = function (index) {
-      $scope.tab.current = index;
-    }
   });
 
 /**
@@ -179,14 +170,14 @@ angular.module('starter.controllers')
     function setOptions(srcType) {
       return {
         // Some common settings are 20, 50, and 100
-        quality: 50,
+       /* quality: 50,*/
         destinationType: Camera.DestinationType.FILE_URI,
         // In this app, dynamically set the picture source, Camera or photo gallery
-        sourceType: srcType,
-        encodingType: Camera.EncodingType.JPEG,
+        sourceType: srcType
+        /*encodingType: Camera.EncodingType.JPEG,
         mediaType: Camera.MediaType.PICTURE,
         allowEdit: true,
-        correctOrientation: true  //Corrects Android orientation quirks
+        correctOrientation: true  //Corrects Android orientation quirks*/
       };
 
     }
@@ -243,20 +234,16 @@ angular.module('starter.controllers')
  */
 angular.module('starter.controllers')
   .controller('AirClinicPageCtrl', function ($scope) {
-    
+
   });
 
 /**
  * Created by salody on 17-2-20.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicPayCtrl', function ($scope) {
-    $scope.button = 'a';
-    $scope.activeButton = function (name) {
-      $scope.button = name;
-    }
-  });
+  .controller('AirClinicPayCtrl', function () {
 
+  });
 
 
 /**

@@ -5,7 +5,7 @@ angular.module('starter.controllers')
   .controller('AirResetPasswordCtrl', ['$scope','$state',function ($scope,$state) {
     $scope.onClickCancelButton=function () {
       $state.go('airLogin');
-      console.log("取消")
+      console.log('取消');
     }
 
   }]);

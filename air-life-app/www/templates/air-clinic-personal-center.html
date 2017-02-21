@@ -1,64 +1,107 @@
 <!-- 个人中心-->
 <ion-view view-title="个人中心"   class="app-air-clinic-personal-center">
-  <ion-content >
+  <ion-content  class="content-body">
     <ul class="list">
-      <li class="item" style="padding: 0px;border: none">
-      <div class="item item-icon-left"  style="border: none">
+      <li class="item item-border">
+      <div class="item item-icon-left item-content">
         <!--<i class="icon ion-ios-telephone-outline"></i>-->
         老司机</div>
-         <div class="item item-icon-left"  style="border: none">
-           <i class="icon ion-ios-telephone-outline"></i>
+         <div class="item item-icon-left item-content" >
+           <i class="icon ion-ios-telephone-outline middle-icon"></i>
            123423123342</div>
       </li>
 
     </ul>
     <ul class="list">
-      <li class="item" style="padding: 0px;border: none">
-        <div class="item item-icon-left"  style="border: none">
-          <a ng-click="onClickPersonalMessage()">
-          <i class="icon ion-compose"></i>
-          编辑个人信息
-          </a>
+      <li class="item item-border">
+        <div class="item item-icon-left">
+          <div ng-click="onClickPersonalMessage()">
+            <div class="color-orange">
+              <i class="icon ion-compose person-icon-inner "></i>
+              <i class="icon ion-record person-icon-outer "></i>
+              <i class="icon ion-ios-circle-outline"></i>
+              </div>
+            编辑个人信息
+          </div>
         </div>
        </li>
-      <li class="item" style="padding: 0px;border: none">
-        <div class="item item-icon-left"  style="border: none">
-          <i class="icon ion-locked"></i>
-          修改密码
+      <!--<li class="item-icon-left person-list-item" href="#/tab/person/person-edit">-->
+        <!---->
+        <!--</div>-->
+        <!--<p>编辑个人信息</p>-->
+      <!--</li>-->
+
+
+
+      <li class="item item-border">
+        <div class="item item-icon-left">
+          <div ng-click="onClickResetPassword()">
+            <div class="color-pink">
+              <i class="icon ion-locked small-icon"></i>
+              <i class="icon ion-record person-icon-outer "></i>
+              <i class="icon ion-ios-circle-outline"></i>
+            </div>
+            修改密码
+          </div>
+
+
         </div>
       </li>
     </ul>
     <ul class="list">
-      <li class="item" style="padding: 0px;border: none">
-        <div class="item item-icon-left"  style="border: none">
-          <a ng-click="onClickMyAppointment()">
-          <i class="icon ion-ios-paper"></i>
+      <li class="item item-border">
+        <div class="item item-icon-left">
+          <div ng-click="onClickMyAppointment()">
+            <div class="color-red">
+              <!--<i class="icon ion-compose person-icon-inner "></i>-->
+              <i class="icon ion-ios-paper small-icon"></i>
+              <i class="icon ion-record person-icon-outer "></i>
+              <i class="icon ion-ios-circle-outline"></i>
+
+            </div>
+
           我的预约
-          </a>
+          </div>
         </div>
       </li>
-      <li class="item" style="padding: 0px;border: none">
-        <div class="item item-icon-left"  style="border: none">
-          <a ng-click="onClickFamilyRelation()">
-          <i class="icon ion-person-stalker"></i>
+      <li class="item item-border">
+        <div class="item item-icon-left">
+          <div ng-click="onClickFamilyRelation()">
+            <div class="colore-green">
+          <i class="icon ion-person-stalker small-icon"></i>
+            <i class="icon ion-record person-icon-outer "></i>
+            <i class="icon ion-ios-circle-outline"></i>
+            </div>
           家庭联系人
-          </a>
+          </div>
         </div>
       </li>
     </ul>
     <ul class="list">
-      <li class="item" style="padding: 0px;border: none">
-        <div class="item item-icon-left"  style="border: none">
-          <i class="icon ion-ios-chatbubble-outline" ></i>
+      <li class="item item-border">
+        <div class="item item-icon-left">
+
+          <div class="colore-blue">
+            <i class="icon ion-ios-chatbubble-outline small-icon" ></i>
+            <i class="icon ion-record person-icon-outer "></i>
+            <i class="icon ion-ios-circle-outline"></i>
+          </div>
           意见反馈
         </div>
       </li>
-      <li class="item" style="padding: 0px;border: none">
-        <div class="item item-icon-left"  style="border: none">
-          <i class="icon ion-information-circled"></i>
+      <li class="item item-border" >
+        <div class="item item-icon-left">
+          <div class="colore-purple">
+            <i class="icon ion-information-circled small-icon"></i>
+            <i class="icon ion-record person-icon-outer "></i>
+            <i class="icon ion-ios-circle-outline"></i>
+          </div>
           关于
         </div>
       </li>
     </ul>
+    <button class="button button-block button-light button-logout" ng-click="onClickLogout()">
+     退出登录
+    </button>
     </ion-content>
   </ion-view>

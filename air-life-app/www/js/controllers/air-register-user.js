@@ -2,12 +2,12 @@
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirRegisterUserCtrl', function ($scope,$state) {
+  .controller('AirRegisterUserCtrl',['$scope', function ($scope) {
     $scope.onClickResetButton=function () {
-      console.log("重置")
+      console.log('重置')
     };
     $scope.onClickCancelButton=function () {
-      console.log("取消")
+      console.log('取消')
     }
 
-  });
+  }]);

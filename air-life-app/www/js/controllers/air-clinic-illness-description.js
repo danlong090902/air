@@ -2,7 +2,7 @@
  * Created by salody on 17-2-20.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicIllnessDescriptionCtrl', function ($scope, $ionicActionSheet,$state) {
+  .controller('AirClinicIllnessDescriptionCtrl',[ '$scope', '$ionicActionSheet','$state',function ($scope, $ionicActionSheet,$state) {
     $scope.showCamera = function () {
       var hideSheet = $ionicActionSheet.show({
         buttons: [
@@ -102,4 +102,4 @@ angular.module('starter.controllers')
 
       }, options);
     }
-  });
+  }]);

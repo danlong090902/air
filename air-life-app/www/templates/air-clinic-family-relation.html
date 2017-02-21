@@ -7,9 +7,13 @@
   <ion-content>
     <div ng-repeat="member in memberArr">
       <div class="list" ng-click="onClickEditPersonal()">
-      <div>{{member.name}}</div>
-      <div>{{member.phone}}</div>
-      <div>{{member.address}}</div>
+      <div class="item member-name">{{member.name}}</div>
+      <div class="item item-content">
+        <i class="ion-ios-telephone-outline"></i>
+        {{member.phone}}</div>
+      <div class="item item-content">
+        <i class="ion-ios-location-outline"></i>
+        {{member.address}}</div>
       </div>
     </div>
     </ion-content>
