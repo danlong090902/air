@@ -452,11 +452,20 @@
 
 .ion-clinic-pay .list .thumbnail-left {
   padding: 10px;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  position: relative; }
+  .ion-clinic-pay .list .thumbnail-left i {
+    font-size: 0;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 10px); }
+  .ion-clinic-pay .list .thumbnail-left.active i::before {
+    font-size: 20px;
+    color: #0a9dc7; }
   .ion-clinic-pay .list .thumbnail-left img {
     width: 40px;
     height: 40px;
-    float: left; }
+    position: absolute; }
   .ion-clinic-pay .list .thumbnail-left p {
     padding-left: 60px;
     margin: 0; }

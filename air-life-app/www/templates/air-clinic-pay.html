@@ -37,15 +37,17 @@
       请选择支付方式
     </ion-item>
     <div class="list">
-      <div class="thumbnail-left">
+      <div class="thumbnail-left" ng-click="activeButton('a')" ng-class="{ 'active': button === 'a' }">
         <img ng-src="img/test.jpg" >
         <p>微信支付</p>
         <p>推荐安装微信5.0及以上版本使用</p>
+        <i class="ion-android-checkbox-outline"></i>
       </div>
-      <div class="thumbnail-left">
+      <div class="thumbnail-left" ng-click="activeButton('b')" ng-class="{ 'active': button === 'b' }">
         <img ng-src="img/test.jpg">
         <p>支付宝支付</p>
         <p>推荐安装支付宝客户端的用户</p>
+        <i class="ion-android-checkbox-outline"></i>
       </div>
     </div>
     <div class="submit">

@@ -80,10 +80,23 @@
     .thumbnail-left {
       padding: 10px;
       border-bottom: 1px solid #ddd;
+      position: relative;
+      i {
+        font-size: 0;
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 10px);
+      }
+      &.active {
+        i::before {
+          font-size: 20px;
+          color: #0a9dc7;
+        }
+      }
       img {
         width: 40px;
         height: 40px;
-        float: left;
+        position: absolute;
       }
       p {
         padding-left: 60px;
