@@ -29,10 +29,10 @@ angular.module('starter.controllers')
         phone:'12345678901',
         address:'你猜'
       }
-    ]
+    ];
 $scope.onClickAddPersonal=function () {
   $state.go('airClinicAddPersonal')
-}
+};
 $scope.onClickEditPersonal=function () {
   $state.go('airClinicEditPersonal')
 }

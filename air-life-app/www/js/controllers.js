@@ -15,15 +15,15 @@ angular.module('starter.controllers', []);
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicDepartmentCtrl', function ($scope) {
+  .controller('AirClinicDepartmentCtrl',[ '$scope',function ($scope) {
 
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicDoctorDetailsCtrl', function ($scope,$ionicSlideBoxDelegate,$state) {
+  .controller('AirClinicDoctorDetailsCtrl',['$scope','$ionicSlideBoxDelegate','$state', function ($scope,$ionicSlideBoxDelegate,$state) {
     $scope.slideIndex = 0;
 
     /*debugger;*/
@@ -47,15 +47,15 @@ angular.module('starter.controllers')
     $scope.appointment = function () {
       $state.go('airClinicIllnessDescription');
     };
-  });
+  }]);
 
 /**
  * Created by salody on 17-2-18.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicDoctorsCtrl', function ($scope) {
+  .controller('AirClinicDoctorsCtrl',[ '$scope',function ($scope) {
 
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -92,10 +92,10 @@ angular.module('starter.controllers')
         phone:'12345678901',
         address:'你猜'
       }
-    ]
+    ];
 $scope.onClickAddPersonal=function () {
   $state.go('airClinicAddPersonal')
-}
+};
 $scope.onClickEditPersonal=function () {
   $state.go('airClinicEditPersonal')
 }
@@ -114,7 +114,7 @@ angular.module('starter.controllers')
  * Created by salody on 17-2-20.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicIllnessDescriptionCtrl', function ($scope, $ionicActionSheet,$state) {
+  .controller('AirClinicIllnessDescriptionCtrl',[ '$scope', '$ionicActionSheet','$state',function ($scope, $ionicActionSheet,$state) {
     $scope.showCamera = function () {
       var hideSheet = $ionicActionSheet.show({
         buttons: [
@@ -214,7 +214,7 @@ angular.module('starter.controllers')
 
       }, options);
     }
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -233,9 +233,9 @@ angular.module('starter.controllers')
  * Created by salody on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicPageCtrl', function ($scope) {
-    
-  });
+  .controller('AirClinicPageCtrl',['$scope', function ($scope) {
+
+  }]);
 
 /**
  * Created by salody on 17-2-20.
@@ -253,10 +253,10 @@ angular.module('starter.controllers')
   .controller('AirClinicPersonalCenterCtrl', ['$scope','$state',function ($scope,$state) {
       $scope.onClickPersonalMessage=function () {
         $state.go('airClinicPersonalMseeage')
-      }
+      };
       $scope.onClickMyAppointment=function () {
         $state.go('airClinicMyAppointment')
-      }
+      };
       $scope.onClickFamilyRelation=function () {
         $state.go('airClinicFamilyRelation')
       }
@@ -296,15 +296,15 @@ angular.module('starter.controllers')
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirRegisterUserCtrl', function ($scope,$state) {
+  .controller('AirRegisterUserCtrl',['$scope', function ($scope) {
     $scope.onClickResetButton=function () {
-      console.log("重置")
+      console.log('重置')
     };
     $scope.onClickCancelButton=function () {
-      console.log("取消")
+      console.log('取消')
     }
 
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -313,7 +313,7 @@ angular.module('starter.controllers')
   .controller('AirResetPasswordCtrl', ['$scope','$state',function ($scope,$state) {
     $scope.onClickCancelButton=function () {
       $state.go('airLogin');
-      console.log("取消")
+      console.log('取消');
     }
 
   }]);

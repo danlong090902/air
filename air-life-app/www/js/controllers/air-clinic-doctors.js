@@ -2,6 +2,6 @@
  * Created by salody on 17-2-18.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicDoctorsCtrl', function ($scope) {
+  .controller('AirClinicDoctorsCtrl',[ '$scope',function ($scope) {
 
-  });
+  }]);

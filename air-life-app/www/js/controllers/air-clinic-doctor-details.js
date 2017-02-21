@@ -2,7 +2,7 @@
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicDoctorDetailsCtrl', function ($scope,$ionicSlideBoxDelegate,$state) {
+  .controller('AirClinicDoctorDetailsCtrl',['$scope','$ionicSlideBoxDelegate','$state', function ($scope,$ionicSlideBoxDelegate,$state) {
     $scope.slideIndex = 0;
 
     /*debugger;*/
@@ -26,4 +26,4 @@ angular.module('starter.controllers')
     $scope.appointment = function () {
       $state.go('airClinicIllnessDescription');
     };
-  });
+  }]);
