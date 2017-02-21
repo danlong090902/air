@@ -1,4 +1,5 @@
 .app-air-clinic-department{
+  background-color: #f0f0f0;
   img{
     width: 100%;
   }
@@ -6,16 +7,13 @@
     font-size: 14px;
     border: none;
   }
-  ion-checkbox{
-    display: inline-block;
-    //width: 30%;
+  .address-message{
+    padding-bottom: 0;
+    margin-bottom: 10px;
   }
   a{
     text-decoration: none;
     color: #000000;
-  }
-  .list{
-    margin-top: 10px;
   }
   .bold {
     font-weight: bolder;
@@ -38,7 +36,23 @@
     font-size: 14px;
     color: #888;
   }
-  .department-details {
+  .address{
+    min-height: 20px;
+    position: relative;
+    .i {
+      position: absolute;
+      right: 18px;
+      color: #888;
+      font-size: 16px;
+    }
+  }
+  .address .item-content{
+    min-height: 20px;
+  }
+  .phone p{
+    padding-bottom: 0;
+  }
+  .department-details{
     position: relative;
     .i {
       position: absolute;
