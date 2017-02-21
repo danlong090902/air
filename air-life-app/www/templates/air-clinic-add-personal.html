@@ -1,29 +1,37 @@
 <ion-view view-title="添加联系人"   class="app-air-clinic-add-personal">
   <ion-content >
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">姓名</span>
-          <input type="text" placeholder="请输入姓名">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">身份证号</span>
-          <input type="password" placeholder="请输入身份证号">
-        </label>
+    <div class="list row"  >
+      <div class="item item-left">
+        姓名
       </div>
-    <div class="list row" >
-      <div class="item col-30" href="#" style="border: none">
-        性别
-      </div>
-      <ion-radio class="item col-34" ng-model="choice" ng-value="'A'" style="border: none">男</ion-radio>
-      <ion-radio class="item col-34" ng-model="choice" ng-value="'B'" style="border: none">女</ion-radio>
+      <input type="text" placeholder="请输入姓名" class="item item-right">
+
+      </input>
     </div>
     <div class="list row" >
-      <div class="item col-30" href="#" style="border: none">
+      <div class="item item-left">
+        身份证
+      </div>
+      <input type="text" placeholder="请输入身份证号" class="item item-right">
+
+      </input>
+    </div>
+    <div class="list row" >
+      <div class="item item-left">
+        性别
+      </div>
+      <div class="item item-right row sexy">
+        <ion-radio class="item col-50" ng-model="choice" ng-value="'A'" >男</ion-radio>
+        <ion-radio class="item col-34" ng-model="choice" ng-value="'B'" >女</ion-radio>
+      </div>
+    </div>
+    <div class="list row" >
+      <div class="item item-left">
         地址
       </div>
-      <div class="item col-70" style="border: none;text-align: center" >
-        西斜七路
-      </div>
+      <input type="text" placeholder="请选择地址" class="item item-right">
+
+      </input>
 
     </div>
     <div class="card">

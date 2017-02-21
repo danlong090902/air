@@ -467,8 +467,35 @@
     background: #09a9ef;
     color: white; }
 
+.app-air-clinic-my-appointment .row {
+  width: 100%; }
+
+.app-air-clinic-my-appointment .row-left {
+  width: 70%; }
+
+.app-air-clinic-my-appointment .row-right {
+  width: 30%; }
+
+.app-air-clinic-my-appointment .urgent-appointment {
+  padding-top: 6px;
+  padding-bottom: 10px; }
+
+.app-air-clinic-my-appointment .color-red {
+  color: red; }
+
 .app-air-clinic-my-appointment .slider {
   height: 100%; }
+
+.app-air-clinic-my-appointment .tab-myserve-item {
+  line-height: 0;
+  color: #08a9ec;
+  height: 10px;
+  border-radius: 6px;
+  border-color: #08a9ec; }
+
+.app-air-clinic-my-appointment .tab-myserve-left {
+  position: absolute;
+  margin-left: -80px; }
 
 .slidingTabs {
   height: 50px;
@@ -532,15 +559,56 @@
 .app-air-clinic-family-relation .item-content {
   padding-top: 4px;
   padding-bottom: 8px;
-  font-size: 6px;
+  font-size: 13px;
   color: #666666;
-  border: none; }
+  border: none !important; }
+
+.app-air-clinic-family-relation .item {
+  border: none !important; }
 
 .app-air-clinic-family-relation .member-name {
-  font-size: 10px;
+  font-size: 14px;
   color: #000000;
   font-weight: bold;
   padding-bottom: 6px; }
+
+.app-air-clinic-family-relation .list {
+  border: 1px !important;
+  margin-bottom: 2px !important; }
+
+.app-air-clinic-edit-personal .row {
+  margin: 0 !important;
+  text-align: center !important; }
+
+.app-air-clinic-edit-personal .item {
+  border: none !important; }
+
+.app-air-clinic-edit-personal .item-right {
+  width: 70%;
+  padding-top: 25px; }
+
+.app-air-clinic-edit-personal .item-left {
+  width: 30%; }
+
+.app-air-clinic-edit-personal .sexy {
+  padding-top: 0; }
+
+.app-air-clinic-add-personal .row {
+  margin: 0 !important;
+  text-align: center !important; }
+
+.app-air-clinic-add-personal .item {
+  border: none !important; }
+
+.app-air-clinic-add-personal .item-right {
+  width: 70%;
+  padding-top: 25px; }
+
+.app-air-clinic-add-personal .item-left {
+  width: 30%; }
+
+.app-air-clinic-add-personal .sexy {
+  padding-top: 0; }
 
 .app-air-clinic-personal-center a:link, .app-air-clinic-personal-center a:active, .app-air-clinic-personal-center a:visited, .app-air-clinic-personal-center a:hover {
   color: #000000; }
@@ -594,6 +662,30 @@
 
 .app-air-clinic-personal-center .color-pink {
   color: pink; }
+
+.app-air-clinic-personal-center .item-border {
+  padding: 0 !important;
+  border: none; }
+
+.app-air-clinic-personal-center .item-icon-left {
+  border: none; }
+
+.app-air-clinic-personal-message .row {
+  margin: 0 !important;
+  text-align: center !important; }
+
+.app-air-clinic-personal-message .item {
+  border: none !important; }
+
+.app-air-clinic-personal-message .item-right {
+  width: 70%;
+  padding-top: 25px; }
+
+.app-air-clinic-personal-message .item-left {
+  width: 30%; }
+
+.app-air-clinic-personal-message .sexy {
+  padding-top: 0; }
 
 .air-clinic-illness-description .flow {
   display: flex;

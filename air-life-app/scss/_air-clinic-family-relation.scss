@@ -2,14 +2,21 @@
   .item-content{
     padding-top: 4px;
     padding-bottom: 8px;
-    font-size: 6px;
+    font-size: 13px;
     color: #666666;
-    border: none;
+    border: none !important;
+  }
+  .item{
+    border: none !important;
   }
   .member-name{
-    font-size: 10px;
+    font-size: 14px;
     color: #000000;
     font-weight: bold;
     padding-bottom: 6px;
+  }
+  .list{
+    border: 1px !important;
+    margin-bottom: 2px!important;
   }
 }

@@ -1,6 +1,33 @@
 .app-air-clinic-my-appointment {
+  .row{
+    width: 100%;
+  }
+  .row-left{
+    width: 70%;
+  }
+  .row-right{
+    width: 30%;
+  }
+  .urgent-appointment{
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
+  .color-red{
+    color: red;
+  }
   .slider {
     height: 100%;
+  }
+  .tab-myserve-item{
+    line-height: 0;
+    color:#08a9ec;
+    height:10px;
+    border-radius:6px;
+    border-color:#08a9ec;
+  }
+  .tab-myserve-left{
+    position:absolute;
+    margin-left:-80px;
   }
 
 }
