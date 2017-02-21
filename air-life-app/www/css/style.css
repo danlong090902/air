@@ -100,6 +100,8 @@
       font-size: 14px;
       font-weight: normal;
       color: #888; }
+  .app-air-clinic-department a {
+    color: #888; }
   .app-air-clinic-department p {
     font-size: 14px;
     color: #888; }
@@ -167,6 +169,20 @@
         font-size: 16px; }
       .app-air-clinic-page .list .department-details p {
         padding-right: 28px; }
+
+.app-air-clinic-address .info-title {
+  color: white;
+  font-size: 14px;
+  background-color: rgba(0, 155, 255, 0.8);
+  line-height: 26px;
+  padding: 0 0 0 6px;
+  font-weight: lighter;
+  letter-spacing: 1px; }
+
+.app-air-clinic-address .info-content {
+  padding: 4px;
+  color: #666666;
+  line-height: 23px; }
 
 .air-clinic-doctors {
   letter-spacing: 0.5px; }
