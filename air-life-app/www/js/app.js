@@ -111,10 +111,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
           'air-clinic-my-service': {
             templateUrl: 'templates/air-clinic-my-service.html',
-            controller: 'AirClinicMyService'
+            controller: 'AirClinicMyServiceCtrl'
           }
         }
       })
+      // //我的服务
+      // .state('airClinicMyService', {
+      //   url: '/air-clinic-my-service',
+      //   templateUrl: 'templates/air-clinic-my-service.html',
+      //   controller: 'AirClinicMyServiceCtrl'
+      // })
+      //个人中心
+      // .state('airClinicPersonalCenter', {
+      //   url: '/air-clinic-personal-center',
+      //   templateUrl: 'templates/air-clinic-personal-center.html',
+      //   controller: 'AirClinicPersonalCenterCtrl'
+      // })
       //  tabs个人中心
       .state('airTabs.airClinicPersonalCenter', {
         url: '/air-clinic-personal-center',
@@ -174,23 +186,35 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         templateUrl: 'templates/air-clinic-doctor-details.html',
         controller: 'AirClinicDoctorDetailsCtrl'
       })
-    //我的服务
-      .state('airClinicMyService', {
-        url: '/air-clinic-my-service',
-        templateUrl: 'templates/air-clinic-my-service.html',
-        controller: 'AirClinicMyServiceCtrl'
-      })
-      //个人中心
-      .state('airClinicPersonalCenter', {
-        url: '/air-clinic-personal-center',
-        templateUrl: 'templates/air-clinic-personal-center.html',
-        controller: 'AirClinicPersonalCenterCtrl'
-      })
       //个人信息
       .state('airClinicPersonalMseeage', {
         url: '/air-clinic-personal-message',
         templateUrl: 'templates/air-clinic-personal-message.html',
         // controller: 'AirClinicPersonalMseeageCtrl'
+      })
+      //添加联系人
+      .state('airClinicAddPersonal', {
+        url: '/air-clinic-add-personal',
+        templateUrl: 'templates/air-clinic-add-personal.html',
+        // controller: 'AirClinicAddPersonalCtrl'
+      })
+      //我的预约
+      .state('airClinicMyAppointment', {
+        url: '/air-clinic-my-appointment',
+        templateUrl: 'templates/air-clinic-my-appointment.html',
+        // controller: 'AirClinicMyAppointmentCtrl'
+      })
+      //家庭联系人
+      .state('airClinicFamilyRelation', {
+        url: '/air-clinic-family-relation',
+        templateUrl: 'templates/air-clinic-family-relation.html',
+        controller: 'AirClinicFamilyRelationCtrl'
+      })
+      //修改联系人
+      .state('airClinicEditPersonal', {
+        url: '/air-clinic-edit-personal',
+        templateUrl: 'templates/air-clinic-edit-personal.html',
+        // controller: 'AirClinicEditPersonalCtrl'
       })
       // 病情描述
       .state('airClinicIllnessDescription', {
