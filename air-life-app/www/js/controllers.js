@@ -10,52 +10,59 @@ angular.module('starter.controllers', []);
 /**
  * Created by xianmengadc on 17-2-17.
  */
+angular.module('starter.controllers')
+  .controller('airClinicAddressCtrl', ['$scope', '$state', function ($scope, $state) {
+    var map = new AMap.Map('container', {
+      resizeEnable: true,
+      zoom: 11,
+      center: [108.84106, 34.17254]
+    });
+    var marker = new AMap.Marker({
+      position: [108.84106, 34.17254]
+    });
+    AMap.plugin('AMap.AdvancedInfoWindow',function(){
+      infowindow = new AMap.AdvancedInfoWindow({
+        content: '<div class="info-title">爱尔诊所后宰门诊室</div><div class="info-content">'+
+        '紫薇龙腾新世界2611室<br/>',
+        offset: new AMap.Pixel(0, 0)
+      });
+      infowindow.open(map,[108.84106, 34.17254]);
+    })
+
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicDepartmentCtrl', function ($scope) {
+  .controller('AirClinicDepartmentCtrl',['$scope',function ($scope) {
 
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
   .controller('AirClinicDoctorDetailsCtrl', function ($scope,$ionicSlideBoxDelegate,$state) {
-    $scope.slideIndex = 0;
 
-    /*debugger;*/
-    $scope.slideChanged = function(index) {
-      $scope.slideIndex = index;
-      console.log(index);
-
-      if ($scope.slideIndex == 0){
-        console.log("slide 1");
-      }
-
-      else if ($scope.slideIndex == 1){
-        console.log("slide 2");
-      }
-
-    };
-
-    $scope.activeSlide = function (index) {
-      $ionicSlideBoxDelegate.slide(index);
-    };
     $scope.appointment = function () {
       $state.go('airClinicIllnessDescription');
     };
+    $scope.tab = {
+     current: 0
+   };
+    $scope.activeTab = function (index) {
+      $scope.tab.current = index;
+    }
   });
 
 /**
  * Created by salody on 17-2-18.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicDoctorsCtrl', function ($scope) {
+  .controller('AirClinicDoctorsCtrl',[ '$scope',function ($scope) {
 
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -92,10 +99,10 @@ angular.module('starter.controllers')
         phone:'12345678901',
         address:'你猜'
       }
-    ]
+    ];
 $scope.onClickAddPersonal=function () {
   $state.go('airClinicAddPersonal')
-}
+};
 $scope.onClickEditPersonal=function () {
   $state.go('airClinicEditPersonal')
 }
@@ -114,7 +121,7 @@ angular.module('starter.controllers')
  * Created by salody on 17-2-20.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicIllnessDescriptionCtrl', function ($scope, $ionicActionSheet,$state) {
+  .controller('AirClinicIllnessDescriptionCtrl',[ '$scope', '$ionicActionSheet','$state',function ($scope, $ionicActionSheet,$state) {
     $scope.showCamera = function () {
       var hideSheet = $ionicActionSheet.show({
         buttons: [
@@ -170,14 +177,14 @@ angular.module('starter.controllers')
     function setOptions(srcType) {
       return {
         // Some common settings are 20, 50, and 100
-       /* quality: 50,*/
+        quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,
         // In this app, dynamically set the picture source, Camera or photo gallery
-        sourceType: srcType
-        /*encodingType: Camera.EncodingType.JPEG,
+        sourceType: srcType,
+        encodingType: Camera.EncodingType.JPEG,
         mediaType: Camera.MediaType.PICTURE,
         allowEdit: true,
-        correctOrientation: true  //Corrects Android orientation quirks*/
+        correctOrientation: true  //Corrects Android orientation quirks
       };
 
     }
@@ -214,7 +221,7 @@ angular.module('starter.controllers')
 
       }, options);
     }
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -233,17 +240,21 @@ angular.module('starter.controllers')
  * Created by salody on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicPageCtrl', function ($scope) {
+  .controller('AirClinicPageCtrl',['$scope', function ($scope) {
 
-  });
+  }]);
 
 /**
  * Created by salody on 17-2-20.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicPayCtrl', function () {
-
+  .controller('AirClinicPayCtrl', function ($scope) {
+    $scope.button = 'a';
+    $scope.activeButton = function (name) {
+      $scope.button = name;
+    }
   });
+
 
 
 /**
@@ -253,12 +264,18 @@ angular.module('starter.controllers')
   .controller('AirClinicPersonalCenterCtrl', ['$scope','$state',function ($scope,$state) {
       $scope.onClickPersonalMessage=function () {
         $state.go('airClinicPersonalMseeage')
-      }
+      };
       $scope.onClickMyAppointment=function () {
         $state.go('airClinicMyAppointment')
-      }
+      };
       $scope.onClickFamilyRelation=function () {
         $state.go('airClinicFamilyRelation')
+      };
+      $scope.onClickResetPassword=function () {
+        $state.go('airResetPassword')
+      };
+      $scope.onClickLogout=function () {
+        $state.go('airLogin')
       }
   }]);
 
@@ -296,15 +313,15 @@ angular.module('starter.controllers')
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirRegisterUserCtrl', function ($scope,$state) {
+  .controller('AirRegisterUserCtrl',['$scope', function ($scope) {
     $scope.onClickResetButton=function () {
-      console.log("重置")
+      console.log('重置')
     };
     $scope.onClickCancelButton=function () {
-      console.log("取消")
+      console.log('取消')
     }
 
-  });
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -313,7 +330,7 @@ angular.module('starter.controllers')
   .controller('AirResetPasswordCtrl', ['$scope','$state',function ($scope,$state) {
     $scope.onClickCancelButton=function () {
       $state.go('airLogin');
-      console.log("取消")
+      console.log('取消');
     }
 
   }]);
