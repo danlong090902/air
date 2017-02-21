@@ -111,10 +111,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
           'air-clinic-my-service': {
             templateUrl: 'templates/air-clinic-my-service.html',
-            controller: 'AirClinicMyService'
+            controller: 'AirClinicMyServiceCtrl'
           }
         }
       })
+      // //我的服务
+      // .state('airClinicMyService', {
+      //   url: '/air-clinic-my-service',
+      //   templateUrl: 'templates/air-clinic-my-service.html',
+      //   controller: 'AirClinicMyServiceCtrl'
+      // })
+      //个人中心
+      // .state('airClinicPersonalCenter', {
+      //   url: '/air-clinic-personal-center',
+      //   templateUrl: 'templates/air-clinic-personal-center.html',
+      //   controller: 'AirClinicPersonalCenterCtrl'
+      // })
       //  tabs个人中心
       .state('airTabs.airClinicPersonalCenter', {
         url: '/air-clinic-personal-center',
@@ -173,18 +185,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/air-clinic-Doctor/:doctorId',
         templateUrl: 'templates/air-clinic-doctor-details.html',
         controller: 'AirClinicDoctorDetailsCtrl'
-      })
-    //我的服务
-      .state('airClinicMyService', {
-        url: '/air-clinic-my-service',
-        templateUrl: 'templates/air-clinic-my-service.html',
-        controller: 'AirClinicMyServiceCtrl'
-      })
-      //个人中心
-      .state('airClinicPersonalCenter', {
-        url: '/air-clinic-personal-center',
-        templateUrl: 'templates/air-clinic-personal-center.html',
-        controller: 'AirClinicPersonalCenterCtrl'
       })
       //个人信息
       .state('airClinicPersonalMseeage', {
