@@ -106,9 +106,16 @@
   .app-air-clinic-department .address {
     min-height: 20px;
     position: relative; }
-    .app-air-clinic-department .address .i {
+    .app-air-clinic-department .address p {
+      padding-left: 20px; }
+    .app-air-clinic-department .address .i-right {
       position: absolute;
       right: 18px;
+      color: #888;
+      font-size: 16px; }
+    .app-air-clinic-department .address .i-left {
+      position: absolute;
+      left: 18px;
       color: #888;
       font-size: 16px; }
   .app-air-clinic-department .address .item-content {

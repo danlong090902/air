@@ -39,9 +39,18 @@
   .address{
     min-height: 20px;
     position: relative;
-    .i {
+    p{
+      padding-left: 20px;
+    }
+    .i-right {
       position: absolute;
       right: 18px;
+      color: #888;
+      font-size: 16px;
+    }
+    .i-left {
+      position: absolute;
+      left: 18px;
       color: #888;
       font-size: 16px;
     }
