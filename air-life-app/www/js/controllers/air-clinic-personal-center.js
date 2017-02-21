@@ -11,5 +11,11 @@ angular.module('starter.controllers')
       };
       $scope.onClickFamilyRelation=function () {
         $state.go('airClinicFamilyRelation')
+      };
+      $scope.onClickResetPassword=function () {
+        $state.go('airResetPassword')
+      };
+      $scope.onClickLogout=function () {
+        $state.go('airLogin')
       }
   }]);
