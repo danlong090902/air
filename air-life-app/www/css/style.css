@@ -83,6 +83,10 @@
 .app-air-clinic-department ion-checkbox {
   display: inline-block; }
 
+.app-air-clinic-department a {
+  text-decoration: none;
+  color: #000000; }
+
 .app-air-clinic-department .list {
   margin-top: 10px; }
 
