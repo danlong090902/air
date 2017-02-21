@@ -1,0 +1,76 @@
+.app-air-clinic-my-appointment {
+  .slider {
+    height: 100%;
+  }
+
+}
+.slidingTabs {
+  height: 50px;
+  z-index: 10;
+}
+
+.slidingTabs .scroll {
+  height: auto;
+  min-width: 100%;
+}
+
+.slidingTabs ul {
+  background-color: #fff;
+  height: 50px;
+}
+
+.slidingTabs ul li {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  margin: 0;
+  padding: 0 12px 20px 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(140, 140, 140);
+  -webkit-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidingTabs ul li.tab-active {
+  color: rgb(8, 169, 236) !important;
+}
+
+.slidingTabs ul li .ink {
+  display: block;
+  position: absolute;
+  background: rgba(56, 147, 245, 0.8);
+  border-radius: 100%;
+  transform: scale(0);
+}
+
+/*.slidingTabs ul li .ink.animate {*/
+/*-webkit-animation: ripple 0.65s linear;*/
+/*animation: ripple 0.65s linear;*/
+/*}*/
+
+.slidingTabs .tab-indicator-wrapper {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transform: translateY(-2px);
+  position: absolute;
+}
+
+.slidingTabs .tab-indicator-wrapper .tab-indicator {
+  height: 100%;
+  background-color: rgb(8, 169, 236);
+  width: 70px;
+  position: relative;
+}
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+

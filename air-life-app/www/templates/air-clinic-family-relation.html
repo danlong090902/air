@@ -1,1 +1,16 @@
-
+<ion-view view-title="家庭联系人"   class="app-air-clinic-family-relation">
+  <ion-nav-buttons side="secondary">
+    <button class="button button-clear add" ng-click="onClickAddPersonal()">
+      添加
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div ng-repeat="member in memberArr">
+      <div class="list" ng-click="onClickEditPersonal()">
+      <div>{{member.name}}</div>
+      <div>{{member.phone}}</div>
+      <div>{{member.address}}</div>
+      </div>
+    </div>
+    </ion-content>
+  </ion-view>
