@@ -83,4 +83,23 @@
       color: #fff;
     }
   }
+  .imgUpload {
+    font-size: 0;
+    .imgItem {
+      position: relative;
+      display: inline-block;
+      margin: 10px 0 0 10px;
+      img {
+        width: 107px;
+        height: 136px;
+      }
+      i {
+        position: absolute;
+        top: -9px;
+        right: 0;
+        font-size: 18px;
+        color: red;
+      }
+    }
+  }
 }

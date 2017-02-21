@@ -179,14 +179,14 @@ angular.module('starter.controllers')
     function setOptions(srcType) {
       return {
         // Some common settings are 20, 50, and 100
-       /* quality: 50,*/
+        quality: 50,
         destinationType: Camera.DestinationType.FILE_URI,
         // In this app, dynamically set the picture source, Camera or photo gallery
-        sourceType: srcType
-        /*encodingType: Camera.EncodingType.JPEG,
+        sourceType: srcType,
+        encodingType: Camera.EncodingType.JPEG,
         mediaType: Camera.MediaType.PICTURE,
         allowEdit: true,
-        correctOrientation: true  //Corrects Android orientation quirks*/
+        correctOrientation: true  //Corrects Android orientation quirks
       };
 
     }

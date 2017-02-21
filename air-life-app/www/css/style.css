@@ -606,3 +606,19 @@
     width: 100%;
     background: #09a9ef;
     color: #fff; }
+
+.air-clinic-illness-description .imgUpload {
+  font-size: 0; }
+  .air-clinic-illness-description .imgUpload .imgItem {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0 0 10px; }
+    .air-clinic-illness-description .imgUpload .imgItem img {
+      width: 107px;
+      height: 136px; }
+    .air-clinic-illness-description .imgUpload .imgItem i {
+      position: absolute;
+      top: -9px;
+      right: 0;
+      font-size: 18px;
+      color: red; }
