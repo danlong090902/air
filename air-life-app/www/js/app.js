@@ -87,7 +87,7 @@ angular.module('starter', ['ionic','starter.controllers','starter.services'])
         .state('airClinicHome', {
             url: '/air-clinic-home',
             templateUrl: 'templates/air-clinic-home.html',
-            controller: 'airClinicHomeCtrl'
+            controller: 'AirClinicHomeCtrl'
         })
       //诊所主页
       .state('airClinicPage', {
@@ -105,7 +105,7 @@ angular.module('starter', ['ionic','starter.controllers','starter.services'])
       .state('airClinicAddress', {
         url: '/air-clinic-address',
         templateUrl: 'templates/air-clinic-address.html',
-        controller: 'airClinicAddressCtrl'
+        controller: 'AirClinicAddressCtrl'
       })
       // 门诊医生
       .state('airClinicDoctors', {
@@ -135,7 +135,7 @@ angular.module('starter', ['ionic','starter.controllers','starter.services'])
       .state('airClinicMyAppointment', {
         url: '/air-clinic-my-appointment',
         templateUrl: 'templates/air-clinic-my-appointment.html',
-        // controller: 'AirClinicMyAppointmentCtrl'
+        controller: 'AirClinicMyAppointmentCtrl'
       })
       //家庭联系人
       .state('airClinicFamilyRelation', {

@@ -384,7 +384,9 @@
   color: #08a9ec;
   height: 10px;
   border-radius: 6px;
-  border-color: #08a9ec; }
+  border-color: #08a9ec;
+  font-size: 12px;
+  padding: 10px; }
 
 .app-air-clinic-my-service .tab-myserve-left {
   position: absolute;

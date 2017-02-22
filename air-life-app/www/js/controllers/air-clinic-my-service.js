@@ -3,6 +3,6 @@
  */
 angular.module('starter.controllers')
   .controller('AirClinicMyServiceCtrl', ['$scope','$state',function ($scope,$state) {
-
+    // $scope.
 
   }]);

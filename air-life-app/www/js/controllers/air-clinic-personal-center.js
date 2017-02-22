@@ -2,7 +2,7 @@
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirClinicPersonalCenterCtrl', ['$scope','$state',function ($scope,$state) {
+  .controller('AirClinicPersonalCenterCtrl', ['$scope','$state',function ($scope,$state,myAppointment) {
       $scope.onClickPersonalMessage=function () {
         $state.go('airClinicPersonalMseeage')
       };
