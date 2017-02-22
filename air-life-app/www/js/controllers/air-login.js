@@ -25,10 +25,9 @@ angular.module('starter.controllers')
           $state.go('airTabs.airHomePage');
           $rootScope.userData=$scope.data.data.result;
           // console.log($scope.data.data.result);
+          //保存数据到本地
           // console.log($scope.userData);
-          // sessionStorage.setItem('username', $scope.data.data.result.user.name);
-          // sessionStorage.setItem('tokenID', $scope.data.data.result.token);
-        }, function () {
+            }, function () {
 
         });
     };

@@ -11,21 +11,19 @@ angular.module('starter.controllers')
     };
 
     $scope.user = {
-      username: 'xianmeng',   //用户名
-      password: '123456',   //密码
-      sms_code:'123456',    //短信验证码
-      invitation_code:'3565507'//邀请码
+      username: '',   //用户名
+      password: '',   //密码
+      sms_code:'',    //短信验证码
+      invitation_code:''//邀请码
     };
     $scope.onClickRegisterButton = function () {
 
       AirRegisterUser.login($scope.user)
         .then(function (data) {
           $scope.data = data;
-          console.log($scope.data);
+          // console.log($scope.data);
           // $state.go('airTabs.airHomePage');
-          // sessionStorage.setItem('username', $scope.data.data.result.user.name);
-          // sessionStorage.setItem('tokenID', $scope.data.data.result.token);
-        }, function () {
+           }, function () {
 
         });
     };
