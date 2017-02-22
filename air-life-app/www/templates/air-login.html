@@ -4,13 +4,13 @@
       <div class="list list-inset">
         <label class="item item-input">
           <i class="icon ion-android-person placeholder-icon"></i>
-          <input type="text" placeholder="请输入手机号">
+          <input type="text" ng-model="user.username" placeholder="请输入手机号">
         </label>
       </div>
       <div class="list list-inset">
         <label class="item item-input">
           <i class="icon ion-locked placeholder-icon"></i>
-          <input type="password" placeholder="请输入密码">
+          <input type="password" ng-model="user.password" placeholder="请输入密码">
         </label>
       </div>
       <button class="button button-block  button-light" ng-click="onClickLoginButton()">登陆</button>
