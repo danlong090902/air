@@ -18,7 +18,11 @@ angular.module('starter.controllers')
       center: [108.84106, 34.17254]
     });
     var marker = new AMap.Marker({
-      position: [108.84106, 34.17254]
+      icon : './img/mark_bs.png',//24px*24px
+      position: [108.84106, 34.17254],
+      offset: new AMap.Pixel(0, 0),
+      map:map
+
     });
     AMap.plugin('AMap.AdvancedInfoWindow',function(){
       infowindow = new AMap.AdvancedInfoWindow({
