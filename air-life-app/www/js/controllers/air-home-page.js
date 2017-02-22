@@ -3,6 +3,6 @@
  */
 angular.module('starter.controllers')
   .controller('AirHomePagerCtrl', ['$scope','$state',function ($scope,$state) {
-
+    console.log($scope.userData);
 
   }]);

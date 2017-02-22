@@ -292,7 +292,7 @@ angular.module('starter.controllers')
  */
 angular.module('starter.controllers')
   .controller('AirHomePagerCtrl', ['$scope','$state',function ($scope,$state) {
-
+    console.log($scope.userData);
 
   }]);
 
@@ -312,7 +312,7 @@ angular.module('starter.controllers')
     };
 
     $scope.user = {
-      username: 'xianmeng123',
+      username: 'xianmeng',
       password: '123456'
     };
     $scope.onClickLoginButton = function () {
@@ -321,8 +321,9 @@ angular.module('starter.controllers')
         .then(function (data) {
           $scope.data = data;
           $state.go('airTabs.airHomePage');
-          $rootScope.user=$scope.data.result;
-          console.log($rootScope.user);
+          $rootScope.userData=$scope.data.data.result;
+          // console.log($scope.data.data.result);
+          // console.log($scope.userData);
           // sessionStorage.setItem('username', $scope.data.data.result.user.name);
           // sessionStorage.setItem('tokenID', $scope.data.data.result.token);
         }, function () {
