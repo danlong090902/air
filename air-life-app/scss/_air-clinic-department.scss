@@ -1,5 +1,10 @@
 .app-air-clinic-department{
-  background-color: #f0f0f0;
+  background: #eee;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  .departments {
+    padding: 12px;
+  }
   img{
     width: 100%;
   }
@@ -10,6 +15,7 @@
   .address-message{
     padding-bottom: 0;
     margin-bottom: 10px;
+    padding-left: 0;
   }
   a{
     text-decoration: none;
@@ -17,7 +23,6 @@
   }
   .bold {
     font-weight: bolder;
-    margin-bottom: 15px;
   }
   h2 {
     font-size: 16px;
@@ -72,6 +77,45 @@
       right: 18px;
       color: #888;
       font-size: 16px;
+    }
+  }
+  .list {
+    .bold {
+      font-weight: bolder;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 16px;
+      .tips {
+        color: #87cefa;
+        margin-left: 0;
+      }
+      span {
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #888;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: #888;
+    }
+    .introduce {
+      text-indent: 2em;
+    }
+    .department-details {
+      position: relative;
+      .i {
+        position: absolute;
+        top: calc(50% - 8px);
+        right: 18px;
+        color: #888;
+        font-size: 16px;
+      }
+      p {
+        padding-right: 28px;
+      }
     }
   }
 }

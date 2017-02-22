@@ -75,7 +75,11 @@
   background-color: #60bdf8; }
 
 .app-air-clinic-department {
-  background-color: #f0f0f0; }
+  background: #eee;
+  letter-spacing: .5px;
+  line-height: 1.5; }
+  .app-air-clinic-department .departments {
+    padding: 12px; }
   .app-air-clinic-department img {
     width: 100%; }
   .app-air-clinic-department .item {
@@ -83,13 +87,13 @@
     border: none; }
   .app-air-clinic-department .address-message {
     padding-bottom: 0;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-left: 0; }
   .app-air-clinic-department a {
     text-decoration: none;
     color: #000000; }
   .app-air-clinic-department .bold {
-    font-weight: bolder;
-    margin-bottom: 15px; }
+    font-weight: bolder; }
   .app-air-clinic-department h2 {
     font-size: 16px; }
     .app-air-clinic-department h2 .tips {
@@ -132,6 +136,34 @@
       right: 18px;
       color: #888;
       font-size: 16px; }
+  .app-air-clinic-department .list .bold {
+    font-weight: bolder;
+    margin-bottom: 15px; }
+  .app-air-clinic-department .list h2 {
+    font-size: 16px; }
+    .app-air-clinic-department .list h2 .tips {
+      color: #87cefa;
+      margin-left: 0; }
+    .app-air-clinic-department .list h2 span {
+      margin-left: 16px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #888; }
+  .app-air-clinic-department .list p {
+    font-size: 14px;
+    color: #888; }
+  .app-air-clinic-department .list .introduce {
+    text-indent: 2em; }
+  .app-air-clinic-department .list .department-details {
+    position: relative; }
+    .app-air-clinic-department .list .department-details .i {
+      position: absolute;
+      top: calc(50% - 8px);
+      right: 18px;
+      color: #888;
+      font-size: 16px; }
+    .app-air-clinic-department .list .department-details p {
+      padding-right: 28px; }
 
 .app-air-clinic-page {
   background: #eee;
