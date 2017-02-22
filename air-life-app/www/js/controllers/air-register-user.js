@@ -14,7 +14,7 @@ angular.module('starter.controllers')
       username: 'xianmeng',   //用户名
       password: '123456',   //密码
       sms_code:'123456',    //短信验证码
-      invitation_code:'5412957'//邀请码
+      invitation_code:'3565507'//邀请码
     };
     $scope.onClickRegisterButton = function () {
 

@@ -300,7 +300,7 @@ angular.module('starter.controllers')
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('AirLoginCtrl', ['$scope', '$state', 'AirLogin', function ($scope, $state, AirLogin) {
+  .controller('AirLoginCtrl', ['$scope', '$state', 'AirLogin','$rootScope', function ($scope, $state, AirLogin,$rootScope) {
     // $scope.onClickLoginButton=function () {
     //   $state.go('airTabs.airHomePage');
     // };
@@ -312,16 +312,17 @@ angular.module('starter.controllers')
     };
 
     $scope.user = {
-      username: 'admin',
-      password: '111111'
+      username: 'xianmeng123',
+      password: '123456'
     };
     $scope.onClickLoginButton = function () {
 
       AirLogin.login($scope.user)
         .then(function (data) {
           $scope.data = data;
-          console.log($scope.data);
           $state.go('airTabs.airHomePage');
+          $rootScope.user=$scope.data.result;
+          console.log($rootScope.user);
           // sessionStorage.setItem('username', $scope.data.data.result.user.name);
           // sessionStorage.setItem('tokenID', $scope.data.data.result.token);
         }, function () {
@@ -346,7 +347,7 @@ angular.module('starter.controllers')
       username: 'xianmeng',   //用户名
       password: '123456',   //密码
       sms_code:'123456',    //短信验证码
-      invitation_code:'5412957'//邀请码
+      invitation_code:'3565507'//邀请码
     };
     $scope.onClickRegisterButton = function () {
 
