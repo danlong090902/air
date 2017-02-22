@@ -4,26 +4,26 @@
     <div class="list list-inset">
       <label class="item item-input">
         <i class="icon ion-android-person placeholder-icon"></i>
-        <input type="text" placeholder="请输入手机号">
+        <input type="text" ng-model="user.username" placeholder="请输入手机号">
       </label>
     </div>
     <div class="list list-inset">
       <label class="item item-input">
         <i class="icon ion-key placeholder-icon"></i>
-        <input type="number" placeholder="请输入验证码">
+        <input type="text" ng-model="user.sms_code" placeholder="请输入验证码">
         <button class="button button-light button-clear button-dark button-small">获取验证码</button>
       </label>
     </div>
     <div class="list list-inset">
       <label class="item item-input">
         <i class="icon ion-locked placeholder-icon"></i>
-        <input type="password" placeholder="请输入密码">
+        <input type="password" ng-model="user.password" placeholder="请输入密码">
       </label>
     </div>
     <div class="list list-inset">
       <label class="item item-input">
         <i class="icon ion-archive placeholder-icon"></i>
-        <input type="number" placeholder="请输入邀请码">
+        <input type="text" ng-model="user.invitation_code" placeholder="请输入邀请码">
       </label>
     </div>
         <ion-checkbox class="button button-clear button-small">同意爱尔生活用户协议</ion-checkbox>

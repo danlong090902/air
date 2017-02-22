@@ -19,7 +19,7 @@ angular.module('starter.controllers')
     };
     $scope.onClickLoginButton = function () {
 
-      AirLogin.login({username: $scope.user.username, password: $scope.user.password})
+      AirLogin.login($scope.user)
         .then(function (data) {
           $scope.data = data;
           console.log($scope.data);
