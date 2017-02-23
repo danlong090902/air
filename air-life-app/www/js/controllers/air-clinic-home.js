@@ -2,7 +2,7 @@
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('airClinicHomeCtrl', ['$scope','$state','AirClinicHome',function ($scope,$state,AirClinicHome) {
+  .controller('AirClinicHomeCtrl', ['$scope','$state','AirClinicHome',function ($scope,$state,AirClinicHome) {
     //绑定的$scope
     $scope.clinicArray=[];
 

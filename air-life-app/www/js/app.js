@@ -36,7 +36,7 @@ angular.module('starter', ['ionic','starter.controllers','starter.services'])
       })
       //  tabs首页
       .state('airTabs.airHomePage', {
-        url: '/air-home-page',
+          url: '/air-home-page',
         views: {
           'air-home-page': {
             templateUrl: 'templates/air-home-page.html',
