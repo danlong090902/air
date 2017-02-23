@@ -9,6 +9,7 @@ angular.module('starter.services')
           method: 'GET',
           url:  'http://www.bigbug.tech:8080/hospital-appointment-api/api/normal_user/change_password.json',
           params: params,
+          responseType: 'json',
           timeout: 3000
         }).then(function (data) {
           deferred.resolve(data);

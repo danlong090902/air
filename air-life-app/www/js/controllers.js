@@ -136,8 +136,16 @@ $scope.onClickEditPersonal=function () {
  * Created by xianmengadc on 17-2-17.
  */
 angular.module('starter.controllers')
-  .controller('airClinicHomeCtrl', ['$scope','$state',function ($scope,$state) {
+  .controller('airClinicHomeCtrl', ['$scope','$state','AirClinicHome',function ($scope,$state,AirClinicHome) {
+    console.log($scope.userData.token);
+    AirClinicHome.login({
+      token:$scope.userData.token
+    })
+      .then(function (data) {
+        console.log(data);
+      }, function () {
 
+      });
 
   }]);
 
@@ -404,9 +412,9 @@ angular.module('starter.controllers')
  */
 angular.module('starter.controllers')
   .controller('AirRegisterUserCtrl',['$scope','AirRegisterUser','$state', function ($scope,AirRegisterUser,$state) {
-    $scope.onClickResetButton=function () {
-      console.log('重置')
-    };
+    // $scope.onClickResetButton=function () {
+    //   console.log('重置')
+    // };
     $scope.onClickCancelButton=function () {
       console.log('取消')
     };
@@ -421,8 +429,7 @@ angular.module('starter.controllers')
 
       AirRegisterUser.login($scope.user)
         .then(function (data) {
-          $scope.data = data;
-          // console.log($scope.data);
+          console.log(data);
           // $state.go('airTabs.airHomePage');
            }, function () {
 

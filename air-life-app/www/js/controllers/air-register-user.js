@@ -3,9 +3,9 @@
  */
 angular.module('starter.controllers')
   .controller('AirRegisterUserCtrl',['$scope','AirRegisterUser','$state', function ($scope,AirRegisterUser,$state) {
-    $scope.onClickResetButton=function () {
-      console.log('重置')
-    };
+    // $scope.onClickResetButton=function () {
+    //   console.log('重置')
+    // };
     $scope.onClickCancelButton=function () {
       console.log('取消')
     };
@@ -20,8 +20,7 @@ angular.module('starter.controllers')
 
       AirRegisterUser.login($scope.user)
         .then(function (data) {
-          $scope.data = data;
-          // console.log($scope.data);
+          console.log(data);
           // $state.go('airTabs.airHomePage');
            }, function () {
 

@@ -1,6 +1,17 @@
 <ion-view class="app-air-home-page" view-title="爱尔生活">
   <ion-content>
-    <img ng-src="img/home-page.jpg">
+    <ion-slide-box on-slide-changed="slideHasChanged($index)">
+      <ion-slide>
+        <div><img ng-src="img/home-page.jpg"></div>
+      </ion-slide>
+      <ion-slide>
+        <div><img ng-src="img/home-page.jpg"></div>
+      </ion-slide>
+      <ion-slide>
+        <div><img ng-src="img/home-page.jpg"></div>
+      </ion-slide>
+    </ion-slide-box>
+
     <div class="home-page">
       <div class="row">
         <div class="col col-50">
