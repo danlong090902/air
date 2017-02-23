@@ -6,22 +6,22 @@ angular.module('starter.controllers')
     var map = new AMap.Map('container', {
       resizeEnable: true,
       zoom: 11,
-      center: [108.84106, 34.17254]
+      center: $scope.addressNumber
     });
     var marker = new AMap.Marker({
       icon : './img/mark_bs.png',//24px*24px
-      position: [108.84106, 34.17254],
+      position: $scope.addressNumber,
       offset: new AMap.Pixel(0, 0),
       map:map
 
     });
     AMap.plugin('AMap.AdvancedInfoWindow',function(){
       infowindow = new AMap.AdvancedInfoWindow({
-        content: '<div class="info-title">爱尔诊所后宰门诊室</div><div class="info-content">'+
-        '紫薇龙腾新世界2611室<br/>',
+        content: '<div class="info-title">'+$scope.addressName.name+'</div><div class="info-content">'+
+        $scope.addressName.address+'<br/>',
         offset: new AMap.Pixel(0, 0)
       });
-      infowindow.open(map,[108.84106, 34.17254]);
+      infowindow.open(map,$scope.addressNumber);
     })
 
   }]);

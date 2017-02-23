@@ -12,7 +12,6 @@ angular.module('starter.controllers')
       .then(function (data) {
         console.log(data.data.result);
         $scope.clinicArray=data.data.result;
-
       }, function () {
 
       });
