@@ -91,9 +91,9 @@ angular.module('starter.controllers')
 angular.module('starter.controllers')
   .controller('AirClinicFamilyRelationCtrl', ['$scope','$state','Contacts',function ($scope,$state,Contacts) {
     $scope.contact = {
-      token:$scope.userData,
+      token:$scope.userData.token,
         // sessionStorage.getItem('token'),         //  令牌
-      normal_user_id:$scope.userData
+      normal_user_id:$scope.userData.id
         // sessionStorage.getItem('userId'), //  用户id
     };
     $scope.message=function () {
@@ -275,8 +275,9 @@ angular.module('starter.controllers')
     // $scope.user=$rootScope.userData;
     console.log($scope.userData);
     $scope.noPay = {
-      token: sessionStorage.getItem('token'),         //  令牌
-      normal_user_id:$scope.userData,
+      token:$scope.userData.token,
+        // sessionStorage.getItem('token'),         //  令牌
+      normal_user_id:$scope.userData.id,
         // sessionStorage.getItem('userId'), //  用户id
       page: 1,       //  页码, 默认1
       count: 20       //  个数, 默认20
