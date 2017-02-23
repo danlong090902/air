@@ -123,13 +123,13 @@ angular.module('starter', ['ionic','starter.controllers','starter.services'])
       .state('airClinicPersonalMseeage', {
         url: '/air-clinic-personal-message',
         templateUrl: 'templates/air-clinic-personal-message.html',
-        // controller: 'AirClinicPersonalMseeageCtrl'
+        controller: 'AirClinicPersonalMseeageCtrl'
       })
       //添加联系人
       .state('airClinicAddPersonal', {
         url: '/air-clinic-add-personal',
         templateUrl: 'templates/air-clinic-add-personal.html',
-        // controller: 'AirClinicAddPersonalCtrl'
+        controller: 'AirClinicAddPersonalCtrl'
       })
       //我的预约
       .state('airClinicMyAppointment', {
@@ -147,7 +147,7 @@ angular.module('starter', ['ionic','starter.controllers','starter.services'])
       .state('airClinicEditPersonal', {
         url: '/air-clinic-edit-personal',
         templateUrl: 'templates/air-clinic-edit-personal.html',
-        // controller: 'AirClinicEditPersonalCtrl'
+        controller: 'AirClinicEditPersonalCtrl'
       })
       // 病情描述
       .state('airClinicIllnessDescription', {

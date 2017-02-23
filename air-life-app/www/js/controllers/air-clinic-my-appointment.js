@@ -1,6 +1,7 @@
 /**
  * Created by xianmengadc on 17-2-17.
  */
+//我的预约
 angular.module('starter.controllers')
   .controller('AirClinicMyAppointmentCtrl', ['$scope','$state','MyAppointment',function ($scope,$state,MyAppointment) {
     // $scope.user=$rootScope.userData;

@@ -6,8 +6,34 @@ angular.module('starter.controllers', []);
 /**
  * Created by xianmengadc on 17-2-17.
  */
+//添加联系人
 angular.module('starter.controllers')
-  .controller('AirClinicAddPersonCtrl', ['$scope', '$state', function ($scope, $state) {
+  .controller('AirClinicAddPersonalCtrl', ['$scope', '$state','AddPersonal', function ($scope, $state,AddPersonal) {
+
+    $scope.addPersonal = {
+      token:$scope.userData.token,
+      // sessionStorage.getItem('token'),         //  令牌
+      normal_user_id:$scope.userData.id,
+      // sessionStorage.getItem('userId'), //  用户id
+      name:'123',
+      phone:'123',
+      gender:'123',
+      address:'123',
+      identity_card:'123'
+    };
+    $scope.saveAddPersonal=function () {
+      AddPersonal.savePersonal($scope.addPersonal)
+        .then(function (data) {
+          console.log(data,'success');
+          // $scope.peopleArr=data.data.result;
+        },function (er) {
+          console.log(er,'error');
+        })
+    };
+    $scope.onClickAddPersonalButton=function () {
+      $scope.saveAddPersonal();
+      $state.go('airClinicFamilyRelation')
+    }
 
   }]);
 
@@ -84,10 +110,39 @@ angular.module('starter.controllers')
 /**
  * Created by xianmengadc on 17-2-17.
  */
+//修改联系人
+angular.module('starter.controllers')
+  .controller('AirClinicEditPersonalCtrl', ['$scope','$state','EditPersonal',function ($scope,$state,EditPersonal) {
+    $scope.editPersonal = {
+      token:$scope.userData.token,
+      // sessionStorage.getItem('token'),         //  令牌
+      patient_id:$scope.userData.id
+      // sessionStorage.getItem('userId'), //  用户id
+    };
+    $scope.message=function () {
+      EditPersonal.delete($scope.contact)
+        .then(function (data) {
+          console.log(data,'success');
+          $scope.peopleArr=data.data.result;
+        },function (er) {
+          console.log(er,'error');
+        })
+    };
+
+
+
+
+  $scope.onClickDeletePersonal=function () {
+    $scope.message();
+    $state.go('airClinicFamilyRelation')
+  }
+  }])
 
 /**
  * Created by xianmengadc on 17-2-17.
  */
+
+//家庭联系人
 angular.module('starter.controllers')
   .controller('AirClinicFamilyRelationCtrl', ['$scope','$state','Contacts',function ($scope,$state,Contacts) {
     $scope.contact = {
@@ -106,40 +161,47 @@ angular.module('starter.controllers')
         })
     };
     $scope.message();
-    // $scope.memberArr=[
-    //   {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }
-    // ];
+
 $scope.onClickAddPersonal=function () {
   $state.go('airClinicAddPersonal')
 };
 $scope.onClickEditPersonal=function () {
   $state.go('airClinicEditPersonal')
-}
+};
+
+
+$scope.memberArr=[
+  {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }
+];
+
   }]);
+
+
+
 
 /**
  * Created by xianmengadc on 17-2-17.
@@ -270,6 +332,7 @@ angular.module('starter.controllers')
 /**
  * Created by xianmengadc on 17-2-17.
  */
+//我的预约
 angular.module('starter.controllers')
   .controller('AirClinicMyAppointmentCtrl', ['$scope','$state','MyAppointment',function ($scope,$state,MyAppointment) {
     // $scope.user=$rootScope.userData;
@@ -375,6 +438,49 @@ angular.module('starter.controllers')
 /**
  * Created by xianmengadc on 17-2-17.
  */
+//个人信息
+angular.module('starter.controllers')
+  .controller('AirClinicPersonalMseeageCtrl', ['$scope','$state','PersonalMessage',function ($scope,$state,PersonalMessage) {
+
+    $scope.showPersonalMessage = {
+      token:$scope.userData.token,
+      // sessionStorage.getItem('token'),         //  令牌
+      normal_user_id:$scope.userData.id,
+      // sessionStorage.getItem('userId'), //  用户id
+    };
+    $scope.showPersonalMessage=function () {
+      PersonalMessage.showMessage($scope.showPersonalMessage)
+        .then(function (data) {
+          console.log(data,'success');
+          // $scope.peopleArr=data.data.result;
+        },function (er) {
+          console.log(er,'error');
+        })
+    };
+    $scope.updatePersonalMessage = {
+      token:$scope.userData.token,
+      // sessionStorage.getItem('token'),         //  令牌
+      normal_user_id:$scope.userData.id,
+      // sessionStorage.getItem('userId'), //  用户id
+      name:'123',
+      gender:'123',
+      address:'123',
+      identity_card:'123'
+    };
+    $scope.updatePersonalMessage=function () {
+      PersonalMessage.updateMessage($scope.updatePersonalMessage)
+        .then(function (data) {
+          console.log(data,'success');
+          // $scope.peopleArr=data.data.result;
+        },function (er) {
+          console.log(er,'error');
+        })
+    };
+    $scope.showPersonalMessage();
+    $scope.onClickUpdatePersonalMessage=function () {
+      $scope.updatePersonalMessage()
+    }
+  }]);
 
 /**
  * Created by xianmengadc on 17-2-17.

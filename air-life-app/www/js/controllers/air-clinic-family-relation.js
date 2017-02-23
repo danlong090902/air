@@ -1,6 +1,8 @@
 /**
  * Created by xianmengadc on 17-2-17.
  */
+
+//家庭联系人
 angular.module('starter.controllers')
   .controller('AirClinicFamilyRelationCtrl', ['$scope','$state','Contacts',function ($scope,$state,Contacts) {
     $scope.contact = {
@@ -19,37 +21,44 @@ angular.module('starter.controllers')
         })
     };
     $scope.message();
-    // $scope.memberArr=[
-    //   {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }, {
-    //     name:'老司机',
-    //     phone:'12345678901',
-    //     address:'你猜'
-    //   }
-    // ];
+
 $scope.onClickAddPersonal=function () {
   $state.go('airClinicAddPersonal')
 };
 $scope.onClickEditPersonal=function () {
   $state.go('airClinicEditPersonal')
-}
+};
+
+
+$scope.memberArr=[
+  {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }, {
+    name:'老司机',
+    phone:'12345678901',
+    address:'你猜'
+  }
+];
+
   }]);
+
+
+
