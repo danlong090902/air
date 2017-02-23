@@ -1,17 +1,16 @@
 <ion-view class="app-air-clinic-home" view-title="爱尔诊所">
   <ion-content>
     <ion-list>
-      <ion-item class="item item-thumbnail-left item-text-wrap" href="#/air-clinic-department">
+      <ion-item class="item item-thumbnail-left item-text-wrap" ng-repeat="arr in clinicArray"
+                href="#/air-clinic-department">
         <img ng-src="img/test.jpg" alt="">
-        <h2>爱尔诊所后宰门诊室<small> 9位三甲医生</small></h2>
-        <span class="department">口腔科</span>
-        <p>紫薇龙腾新世界2611</p>
-      </ion-item>
-      <ion-item class="item item-thumbnail-left item-text-wrap" href="#/air-clinic-Doctor/:doctorId">
-        <img ng-src="img/test.jpg" alt="">
-        <h2>爱尔诊所后宰门诊室<small> 9位三甲医生</small></h2>
-        <span class="department">口腔科</span>
-        <p>紫薇龙腾新世界2611</p>
+        <h2 ng-bind="arr.name">
+          <small> {{arr.doctor_count}}位三甲医生</small>
+        </h2>
+        <span  ng-repeat="departmentArr in arr.departments">
+          <span class="department" ng-bind="departmentArr.name"></span>
+        </span>
+        <p ng-bind="arr.address"></p>
       </ion-item>
     </ion-list>
   </ion-content>
