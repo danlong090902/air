@@ -6,7 +6,7 @@ angular.module('starter.controllers')
     console.log($scope.userData.token);
     AirClinicDepartment.login({
       token:$scope.userData.token,
-      hospital_id:1
+      hospital_id:2
     })
       .then(function (data) {
         console.log(data);

@@ -73,7 +73,7 @@ angular.module('starter.controllers')
     console.log($scope.userData.token);
     AirClinicDepartment.login({
       token:$scope.userData.token,
-      hospital_id:1
+      hospital_id:2
     })
       .then(function (data) {
         console.log(data);
@@ -215,8 +215,9 @@ angular.module('starter.controllers')
       token:$scope.userData.token
     })
       .then(function (data) {
-        // console.log(data.data.result);
+        console.log(data.data.result);
         $scope.clinicArray=data.data.result;
+
       }, function () {
 
       });
@@ -516,11 +517,15 @@ angular.module('starter.controllers')
         .then(function (data) {
           $scope.data = data;
           $state.go('airTabs.airHomePage');
-          $rootScope.userData=$scope.data.data.result;
+          $rootScope.userData=data.data.result;
           // console.log($scope.data.data.result);
           //保存数据到本地
           // console.log($scope.userData);
-            }, function () {
+          sessionStorage.setItem('token', data.data.result.token);
+          sessionStorage.setItem('id', data.data.result.id);
+          sessionStorage.setItem('username', data.data.result.username);
+
+        }, function () {
 
         });
     };

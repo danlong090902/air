@@ -23,11 +23,15 @@ angular.module('starter.controllers')
         .then(function (data) {
           $scope.data = data;
           $state.go('airTabs.airHomePage');
-          $rootScope.userData=$scope.data.data.result;
+          $rootScope.userData=data.data.result;
           // console.log($scope.data.data.result);
           //保存数据到本地
           // console.log($scope.userData);
-            }, function () {
+          sessionStorage.setItem('token', data.data.result.token);
+          sessionStorage.setItem('id', data.data.result.id);
+          sessionStorage.setItem('username', data.data.result.username);
+
+        }, function () {
 
         });
     };

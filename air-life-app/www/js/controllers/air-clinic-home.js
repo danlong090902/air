@@ -10,8 +10,9 @@ angular.module('starter.controllers')
       token:$scope.userData.token
     })
       .then(function (data) {
-        // console.log(data.data.result);
+        console.log(data.data.result);
         $scope.clinicArray=data.data.result;
+
       }, function () {
 
       });
