@@ -10,7 +10,6 @@
   </author>
   <content src="index.html"/>
   <access origin="*"/>
-  <access origin="tel:*" launch-external="yes"/>
   <access launch-external="yes" origin="tel:*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
