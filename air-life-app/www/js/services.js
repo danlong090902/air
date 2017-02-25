@@ -215,11 +215,12 @@ angular.module('starter.services')
 //普通用户登陆工厂
   .factory('AirHomePage', function ($http, $q) {
     return {
+      //获取推荐医生
       login: function (params) {
         var deferred = $q.defer();
         $http({
-          method: 'POST',
-          url:  'http://www.bigbug.tech:8080/hospital-appointment-api/api/ad/recommend.json',
+          method: 'GET',
+          url:  'http://www.bigbug.tech:8080/hospital-appointment-api/api/doctor/recommend.json',
           params: params,
           responseType: 'json',
           timeout: 3000

@@ -60,16 +60,10 @@
 
       <!--医生详情开始-->
       <!--医生一详情-->
-      <ion-item class="doctor-details item-text-wrap item-thumbnail-left" href="#">
+      <ion-item class="doctor-details item-text-wrap item-thumbnail-left" ng-repeat="arr in doctorData" href="#">
         <img ng-src="img/home-page.jpg" alt="">
-        <h2>邱洪涛<small>产科 医师</small></h2>
-        <p>从事妇产科临床与教学25年，擅长处理产程中出现的各种异常情况及疑难问题，娴熟产前、臀助产，内选转术等助产技术。</p>
-      </ion-item>
-      <!--医生一详情-->
-      <ion-item class="doctor-details item-text-wrap item-thumbnail-left" href="#">
-        <img ng-src="img/home-page.jpg" alt="">
-        <h2>邱洪涛<small>产科 医师</small></h2>
-        <p>从事妇产科临床与教学25年，擅长处理产程中出现的各种异常情况及疑难问题，娴熟产前、臀助产，内选转术等助产技术。</p>
+        <h2>{{arr.name}}<span>{{' '+arr.hospital_department_name}}{{' '+arr.job_title}}</span></h2>
+        <p ng-bind="arr.introducation"></p>
       </ion-item>
       <!--医生详情结束-->
 

@@ -8,7 +8,7 @@ angular.module('starter.controllers')
 
     AirClinicDepartment.login({
       token:$scope.userData.token,
-      hospital_id:2
+      hospital_id:$scope.hospital_id
     })
       .then(function (data) {
         console.log(data.data.result);

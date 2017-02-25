@@ -2,10 +2,9 @@
   <ion-content>
     <ion-list>
       <ion-item class="item item-thumbnail-left item-text-wrap" ng-repeat="arr in clinicArray"
-                href="#/air-clinic-department">
+                ng-click="changeClinic($index)">
         <img ng-src="img/test.jpg" alt="">
         <h2 ng-bind="arr.name">
-          <small> {{arr.doctor_count}}位三甲医生</small>
         </h2>
         <span  ng-repeat="departmentArr in arr.departments">
           <span class="department" ng-bind="departmentArr.name"></span>
